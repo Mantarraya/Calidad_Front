@@ -7,7 +7,7 @@ class NavBarUser extends React.Component{
         return(
             <nav>
                 <ul className="nav_lista">
-                    <Link className="item logo" to="/">LOGO</Link>
+                    <Link className="item logo" to="/home_user">LOGO</Link>
                     <li className="item cursos" id="curso">Cursos</li>
                     <li className="item">
                         <input type="text" className="buscador" placeholder="Que quieres aprender?"/>

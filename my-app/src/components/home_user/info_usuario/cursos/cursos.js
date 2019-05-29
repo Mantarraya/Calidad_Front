@@ -28,19 +28,19 @@ export default class Cursos extends React.Component{
         return(
             <div className="cursos--contendor_cursos">
                 <div className="cursos--grupo_cuadros">
-                    <div className="cursos--cuadro_curso"></div>
-                    <div className="cursos--cuadro_curso">holaaaa</div>
-                    <div className="cursos--cuadro_curso"></div>
+                    <div className="cursos--cuadro_curso">Algebra</div>
+                    <div className="cursos--cuadro_curso">Aritmetica</div>
+                    <div className="cursos--cuadro_curso">Geometria</div>
                 </div>
                 <div className="cursos--grupo_cuadros">
-                    <div className="cursos--cuadro_curso"></div>
-                    <div className="cursos--cuadro_curso"></div>
-                    <div className="cursos--cuadro_curso"></div>
+                    <div className="cursos--cuadro_curso">Trigonometria</div>
+                    <div className="cursos--cuadro_curso">Fisica</div>
+                    <div className="cursos--cuadro_curso">Quimica</div>
                 </div>
                 <div className="cursos--grupo_cuadros">
-                    <div className="cursos--cuadro_curso"></div>
-                    <div className="cursos--cuadro_curso"></div>
-                    <div className="cursos--cuadro_curso"></div>
+                    <div className="cursos--cuadro_curso">Biologia</div>
+                    <div className="cursos--cuadro_curso">Historia</div>
+                    <div className="cursos--cuadro_curso">Geografia</div>
                 </div>
             </div>
         )

@@ -23,10 +23,10 @@ class NavBar extends React.Component{
         return(
             <nav class="login--nav">
                 <ul>
-                    <Link to="/">TechFazt</Link>
+                    <Link className="navbar--principal" to="/">TechFazt</Link>
                     <li>Servicios</li>
                     <li>Acerca de</li>
-                    <Link to="/login">Unete</Link>
+                    <Link className="navbar--principal"  to="/login">Unete</Link>
                     <form>
                         <li class="login--derecha login--iniciar_sesion_email">
                             <input type="text" placeholder="Email"/>                    

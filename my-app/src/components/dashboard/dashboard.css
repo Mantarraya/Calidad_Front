@@ -5,7 +5,7 @@
     width: 100%;
 }
 .dashboard--principal--parallax1{
-    background-image: url('https://s2.best-wallpaper.net/wallpaper/1920x1080/1711/City-buildings-night-roof-person_1920x1080.jpg');
+    background-image: url('./fondo_dashboard.jpg');
     
     height: 500px;
     background-attachment: fixed;
@@ -129,6 +129,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 230px;
 }
 
 

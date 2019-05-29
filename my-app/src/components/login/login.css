@@ -74,6 +74,11 @@
     color: black;
 }
 
+.login--btn_registrarse:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
 
 .login--btn_ingresar_fb{
     width: 78%;

@@ -10,6 +10,7 @@
     padding: 0;
     padding-top: 15px;
     height: 35px;
+    padding-left: 10px;
 }
 
 .login--nav ul {
@@ -22,6 +23,11 @@
 .login--nav ul li{
     list-style: none;
     padding: 3px 10px;
+}
+
+.navbar--principal{
+    text-decoration: none;
+    color: black;
 }
 
 .login--derecha{

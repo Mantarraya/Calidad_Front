@@ -9,34 +9,32 @@ export default class Footer extends React.Component{
                 <div class="footer_superior">
                     <div class="footer_superior--listas">
                         <div class="footer_superior--list footer_superior--lista1">
-                        <h3>Aprende</h3>
+                        <h3>Matematica</h3>
                             <ul>
-                                <li>uno</li>
-                                <li>dos</li>
-                                <li>tres</li>
+                                <li>Algebra</li>
+                                <li>Geometria</li>
+                                <li>Trigonometria</li>
                             </ul>
                         </div>
                         <div class="footer_superior--list footer_superior--lista2">
-                        <h3>Aprende</h3>
+                        <h3>CTA</h3>
                             <ul>
-                                <li>uno</li>
-                                <li>dos</li>
-                                <li>tres</li>
+                                <li>Quimica</li>
+                                <li>Fisica</li>
                             </ul>
                         </div>
                         <div class="footer_superior--list footer_superior--lista3">
-                        <h3>Aprende</h3>
+                        <h3>Natruraleza</h3>
                             <ul>
-                                <li>uno</li>
-                                <li>dos</li>
-                                <li>tres</li>
+                                <li>Geografia</li>
+                                <li>Fisica</li>
                             </ul>
                         </div>
                         
                         <div class="footer_superior--list footer_superior--lista4">
-                        <h3>Aprende</h3>
+                        <h3>Repositorio de Archivos</h3>
                             <p>
-                                Velit tempora voluptates sunt, mollitia fuga nisi itaque. Iusto molestias optio dolorem facilis repellat corrupti non facere.
+                            Disfruta de nuestro banco de preguntas acorde a las necesidades que tengas.
                             </p>
                         </div>
                     </div>

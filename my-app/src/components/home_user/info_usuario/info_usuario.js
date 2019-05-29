@@ -54,9 +54,8 @@ class InfoUsuario extends React.Component{
                     
                     <div className="menu_navegacion">
                         <ul className="lista3">
-                            <li className="item3 itemDash" onClick={this.cargarMainHome}>Dashboard</li>
+                            <li className="item3 itemDash" onClick={this.cargarMainHome}>Home</li>
                             <li className="item3" onClick={this.cargarCursos}>Cursos</li>
-                            <li className="item3">Discuciones</li>
                             <li className="item3 perfil_derecha">Perfil</li>
                         </ul>
                     </div>

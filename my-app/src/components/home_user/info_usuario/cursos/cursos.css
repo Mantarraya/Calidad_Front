@@ -1,6 +1,5 @@
 .cursos--contendor_cursos{
-    margin: 10px 10%;
-    background-color: red;
+    margin: 100px 10%;
 }
 
 .cursos--grupo_cuadros{
@@ -11,10 +10,22 @@
 }
 
 .cursos--cuadro_curso{
-    height: 200px;
+    height: 100px;
     width: 300px;
-    padding: 20px;
+    padding: 60px 20px 0px 20px;
     border-radius: 5px;
-    background-color: aqua;
+    background-color: aliceblue;
     margin-left: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: gray;
+    border:1px solid gray;
+    cursor: pointer;
+}
+
+
+.cursos--cuadro_curso:hover{
+
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
 }

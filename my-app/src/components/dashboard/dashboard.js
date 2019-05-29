@@ -13,9 +13,9 @@ class Dashboard extends Component{
                 <div className="dashboard--principal--contenedor_home">
                     <div className="dashboard--principal--parallax1">
                         <div className="dashboard--principal--contenido_portada">
-                            <p className="dashboard--principal--frase">Una frase identificadora</p>
+                            <p className="dashboard--principal--frase">Enseñanza de calidad</p>
                             <p className="dashboard--principal--descripcion">
-                                Aca se describe todo lo que hace la aplicacion y que soluciones ofrece
+                            Tutores con amplia experiencia y especializados en los cursos que dictan.
                             </p>
                         </div>
                     </div>
@@ -28,46 +28,40 @@ class Dashboard extends Component{
                             <div className="dashboard--principal--cua2">
                                 <ul>
                                     <li>
-                                        <b>Tipo1</b>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, odio?</p>
+                                        <b>Apoyo escolar</b>
+                                        <p>Clases de nivelación, acompañamiento en tareas y preparación para exámenes.</p>
                                     </li>
                                     <li>
-                                        <b>Tipo1</b>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, odio?</p>
+                                        <b>Preuniversitario</b>
+                                        <p> Clases personalizadas o en grupos pequeños nivel PRE.</p>
                                     </li>
                                     <li>
-                                        <b>Tipo1</b>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, odio?</p>
+                                        <b>Taller de inteligencias múltiples</b>
+                                        <p>Paquete de cursos variados por 1 solo precio.</p>
                                     </li>
                                 </ul>
                             </div>
                             <div className="dashboard--principal--cua3">
                                 <ul>
                                     <li>
-                                        <b>Tipo1</b>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, odio?</p>
+                                        <b>Orientación vocacional (en local)</b>
+                                        <p>Asesoría vocacional por medio de un examen físico de diagnóstico y coaching</p>
                                     </li>
                                     <li>
-                                        <b>Tipo1</b>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, odio?</p>
+                                        <b>Tutor WhatsApp</b>
+                                        <p>La asesoría solo es por WhatsApp.</p>
                                     </li>
                                     <li>
-                                        <b>Tipo1</b>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, odio?</p>
+                                        <b>Orientación vocacional (digital)</b>
+                                        <p> Asesoría vocacional por medio de un examen digital de diagnóstico y coaching, con reuniones con expertos por videollamada.</p>
                                     </li>
                                 </ul>
                             </div>
                         </div>
 
                         <div className="dashboard--principal--vision">
-                                <p className="dashboard--principal--titulo_vision"> <b>NUESTRA</b> VISION</p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam illo repellat cumque. Cum obcaecati sit eligendi excepturi accusantium dignissimos adipisci tempore distinctio alias ad culpa est quia, pariatur harum veritatis?
-                                <br/><br/>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam illo repellat cumque. Cum obcaecati sit eligendi excepturi accusantium dignissimos adipisci tempore distinctio alias ad culpa est quia, pariatur harum veritatis?
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam illo repellat cumque. Cum obcaecati sit eligendi excepturi accusantium dignissimos adipisci tempore distinctio alias ad culpa est quia, pariatur harum veritatis?
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam illo repellat cumque. Cum obcaecati sit eligendi excepturi accusantium dignissimos adipisci tempore distinctio alias ad culpa est quia, pariatur harum veritatis?
-                                <br/><br/>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste inventore officia ea impedit dolore praesentium. Reprehenderit quisquam tempora consequuntur eum modi, porro voluptas doloribus, fuga et deserunt animi blanditiis! Saepe accusamus unde sunt esse maiores laboriosam praesentium vero excepturi necessitatibus!
+                                <p className="dashboard--principal--titulo_vision"> <b>A la vuelta de la </b> esquina</p>
+                                Contacta a los mejores tutores que están dispuestos a enseñarte y cercanos a tu hogar.
                         </div>
                     </div>
                     
