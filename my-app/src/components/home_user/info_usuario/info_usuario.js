@@ -62,7 +62,7 @@ class InfoUsuario extends React.Component{
                     </div>
                 </div>
                 
-                {this.state.valor==0?<MainHome/>:<Cursos/>}
+                {this.state.valor===0?<MainHome/>:<Cursos/>}
             </div>
             
         );

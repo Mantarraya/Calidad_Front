@@ -8,12 +8,12 @@ class NavBarUser extends React.Component{
             <nav>
                 <ul className="nav_lista">
                     <Link className="item logo" to="/">LOGO</Link>
-                    <li className="item cursos" id="curso">Cursos &#9196;</li>
+                    <li className="item cursos" id="curso">Cursos</li>
                     <li className="item">
                         <input type="text" className="buscador" placeholder="Que quieres aprender?"/>
                     </li>
                     <div className="derecha">
-                        <li className="item cerrar_sesion">Cerrar Sesion</li>
+                        <Link className="item cerrar_sesion" to="/login">Cerrar Sesion</Link>
                     </div>
                 </ul>
             </nav>

@@ -1,0 +1,70 @@
+
+/*
+    Navbar login
+*/
+
+.login--nav{
+    background-color: #f8f9fa;
+    width: 1;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    height: 35px;
+}
+
+.login--nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+}
+
+.login--nav ul li{
+    list-style: none;
+    padding: 3px 10px;
+}
+
+.login--derecha{
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+.login--iniciar_sesion_email{
+    width: 200px;
+    right: 380px;
+}
+
+.login--iniciar_sesion_pass{
+    width: 200px;
+    right: 130px;
+}
+
+.login--iniciar_sesion_btn{
+    right: 0;
+}
+
+.login--nav ul li input{
+    height: 25px;
+    border-radius: 3px;
+    background-color: white;
+    border: none;
+    border: 0.5px solid gray;
+    padding: 5px;
+}
+
+.login--iniciar_sesion_btn button{
+    height: 37px;
+    width: 80px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 0px;
+    color: green;
+    border: 1px solid green;
+    cursor: pointer;
+}
+
+.login--iniciar_sesion_btn button:hover{
+    background: green;
+    color: white;
+}
