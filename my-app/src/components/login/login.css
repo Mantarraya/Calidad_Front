@@ -92,3 +92,8 @@
     margin-bottom: 20px;
     color: blue;
 }
+
+.login--btn_ingresar_fb:hover{
+    background-color: blue;
+    color: white;
+}

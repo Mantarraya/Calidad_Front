@@ -21,6 +21,7 @@
 }
 
 .logo{
+    text-decoration: none;
     font-weight: bold;
     font-size: 25px;
 }
@@ -66,6 +67,7 @@
     cursor: pointer;
     border-radius: 5px;
     border: solid 2px  #303840;
+    text-decoration: none;
 }
 .cerrar_sesion:hover{
     background-color: rebeccapurple;

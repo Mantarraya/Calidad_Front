@@ -29,10 +29,10 @@ class NavBar extends React.Component{
                     <Link className="navbar--principal"  to="/login">Unete</Link>
                     <form>
                         <li class="login--derecha login--iniciar_sesion_email">
-                            <input type="text" placeholder="Email"/>                    
+                            <input type="email" placeholder="Email"/>                    
                         </li>
                         <li class="login--derecha login--iniciar_sesion_pass">
-                            <input type="text" placeholder="Contraseña" />
+                            <input type="password" placeholder="Contraseña" />
                         </li>
                         <li class="login--derecha login--iniciar_sesion_btn">
                             <button onClick={this.iniciarSesion}>Entrar</button>

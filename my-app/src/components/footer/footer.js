@@ -28,6 +28,7 @@ export default class Footer extends React.Component{
                             <ul>
                                 <li>Geografia</li>
                                 <li>Fisica</li>
+                                <li>Biologia</li>
                             </ul>
                         </div>
                         

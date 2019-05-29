@@ -23,8 +23,8 @@ export default class Login extends Component{
                     <h1>Aprende con nosotros</h1>
                     <p>Registrate en pocos segundos</p>
                         <form action="">
-                            <input type="text" placeholder="Ingrese Correo"/>
-                            <input type="text" placeholder="Contraseña"/>
+                            <input type="email" placeholder="Ingrese Correo"/>
+                            <input type="password" placeholder="Contraseña"/>
                             <input type="text" placeholder="Nombre Usuario"/>
                             <button class="login--btn_registrarse">Registrarse</button>
                         </form>
