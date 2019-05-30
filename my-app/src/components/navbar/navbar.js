@@ -19,8 +19,8 @@ class NavBar extends React.Component{
                 'Accept':'application/json'
             },
             body:JSON.stringify({
-                'name':'uwu',
-                'password':'uwu'
+                'name':'elvis1234',
+                'password':'1234'
             })
         })
         .then(function(response){
@@ -29,13 +29,15 @@ class NavBar extends React.Component{
         })
         .then(function (data){
             console.log(data)
+
         })
         .catch(err=>{
             console.log(err)
             alert("error")
         })
-        e.preventDefault();
+
         this.props.history.push('/home_user')
+        e.preventDefault();
     }
 
     render(){

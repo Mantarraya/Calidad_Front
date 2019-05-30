@@ -1,61 +1,51 @@
 
 /*   ----- FOOTER ----    */
 
+.footer--contenido{
+    background-color: #f5f7fa;
+    padding: 50px 0px;
+    box-shadow: 2px 2px 2px 2px gray;
+}
 
-footer{
+.footer--superior{
+    margin-left: 9%;
+    margin-right: 9%;
+    padding: 0px;
 }
 
 
-/* Superior */
-
-.footer_superior{
-    width: 100%;    
-    background-color:rgba(18,36,14,0.1);
+.footer--superior-listas h3,.footer_superior--info h3{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: -1.2px;
+    color: rgb(104, 104, 104);
 }
 
-.footer_superior--listas{
-    padding-top: 60px;
-    padding-bottom: 50px;
-    display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
+.footer--superior-listas ul{
+    padding: 0px;
 }
 
-.footer_superior--list ul{
-    padding: 0;
-    text-align: start;
-}
-
-.footer_superior--list ul li{
+.footer--superior-listas ul li{
     list-style: none;
-    color: gray;
+    color: rgba(48,56,64,.7);
+    font-size: 1em;
+    font-family: Oswald,Arial, Helvetica, sans-serif;
 }
 
-.footer_superior--lista1{
-    width: 20%;
+.footer_superior--info{
+    position: inherit;
+    right: 0;
+    text-align: end;
 }
-.footer_superior--lista2{
-    width: 20%;
-    
-}
-.footer_superior--lista3{
-    width: 20%;
-    
-}
-.footer_superior--lista4{
-    width: 40%;
-    text-align: end;  
+
+.footer_superior--info p{
+    color: rgba(48,56,64,.7);
+    font-size: 1em;
+    font-family: Oswald,Arial, Helvetica, sans-serif;
 }
 
 
-.footer_superior--list h3{
-    color: #303840;
-}
 
 
-.footer_superior--list p{
-    color: gray;
-}
 
 
 
