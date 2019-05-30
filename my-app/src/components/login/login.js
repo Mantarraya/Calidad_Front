@@ -7,30 +7,83 @@ import Footer from "../footer/footer";
 
 export default class Login extends Component{
 
+    constructor(props){
+        super(props)
 
+        this.registrarNuevoUsuario=this.registrarNuevoUsuario.bind(this)
+    }
 
+    registrarNuevoUsuario(e){
+        
+        e.preventDefault();
+        fetch('https://back-calidad.herokuapp.com/api/register-alumno',{
+            method:'POST',
+            headers:{
+                'Accept': 'application/json, text/plain, */*',
+                'Content-Type': 'application/json'
+            },
+            body:JSON.stringify({
+                "username": "elvis1234",
+                "password": "1234",
+                "firstname": "elvis",
+                "lastname": "zapatero",
+                "email": "elvissoftnife28@gmail.com" 
+            })
+        })
+        .then(function(response){
+            console.log(response)
+            return response.text();
+        })
+        .then(function (data){
+            alert("Inicio registro")
+
+            console.log(data)
+        })
+        .catch(err=>{
+            console.log(err)
+            alert("error")
+        })
+        e.preventDefault();
+    }
 
     render(){
         return(
             <div>
                 <NavBar/>
-                <div class="login--main">
-                    <div class="login--cuadro_informativo">
-                        <h1>Bienvenido a TechFazt</h1>
-                        <p>La plataforma que te ayudara a conocer</p>
+                <div className="container-fluid">
+                    <div className="row login--fondo">
+                        <div className="col-sm-6">
+                            <div className="card login--cuadro_titulo">
+                                <div className="card-body login--cuadro_titulo_texto" >
+                                    <h1 className=" display-3 font-weight-bold text-white text-center">Bienvenidos a TechFazt</h1>
+                                    <h3 className=" text-white text-center">La plataforma que te ayudará a conocer</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-sm-6">
+                            <div className="card w-50 login--cuadro_principal">
+                                <div className="card-body">
+                                    <h2 className="text-center font-weight-bold">Aprende con nosotros</h2>
+                                    <h5 className="text-center">Regístrate en pocos segundos</h5>
+                                    <form >
+                                        <div className="form-group login--cuadro_principal_email">
+                                            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
+                                        </div>
+                                        <div className="form-group login--cuadro_principal_password">
+                                            <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password"/>
+                                        </div>
+                                        <div class="form-group login--cuadro_principal_username">
+                                            <input type="text"  className="form-control" name="username"id="usernameField"  placeholder="Username"value=""/>
+                                        </div>
+                                        <button type="submit" className="btn btn-outline-dark w-100" onClick={this.registrarNuevoUsuario}> <span class="font-weight-bold">Regístrate</span></button>
+                                        <p class="btn  btn-outline-primary w-100 mt-3 " href="#">
+                                            <i className="fab fa-facebook"></i>
+                                            <span className="font-weight-bold"> Ingresa con Facebook</span>
+                                        </p>
+                                    </form>
+                                </div>
+                        </div>
                     </div>
-                    <div class="login--cuadro_registro">
-                    <h1>Aprende con nosotros</h1>
-                    <p>Registrate en pocos segundos</p>
-                        <form action="">
-                            <input type="email" placeholder="Ingrese Correo"/>
-                            <input type="password" placeholder="Contraseña"/>
-                            <input type="text" placeholder="Nombre Usuario"/>
-                            <button class="login--btn_registrarse">Registrarse</button>
-                        </form>
-                        
-                        <button class="login--btn_ingresar_fb" type="button"> Ingresa con Facebook</button>
-                        
                     </div>
                 </div>
                 <Footer/>

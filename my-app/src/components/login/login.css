@@ -1,99 +1,38 @@
 /*
     Cuerpo login
 */
+.login--fondo{
+    background:#0056ff;
+}
 
+.login--cuadro_titulo{
+    margin-top:200px;
+    margin-bottom:200px;
+    margin-left:100px;
+    border-style: none;
+    border-color:transparent;
+}
 
+.login--cuadro_titulo_texto{
+    background:#0056ff;
+}
 
+.login--cuadro_principal{
+    margin-top:200px;
+    margin-bottom:200px;
+    margin-left:100px;
+}
 
+.login--cuadro_principal_email{
+    margin-top:30px;
+}
 
-.login--main{
-    padding: 50px 5%;
-    display: flex;
-    background-color: #0056ff;
+.login--cuadro_principal_password{
+    margin-top:20px;
+}
+
+.login--cuadro_principal_username{
+    margin-top:20px;
 }
 
 
-.login--cuadro_informativo{
-    width: 70%;
-    margin: auto;
-    text-align: center;
-    margin-top: 10px;
-}
-
-
-.login--cuadro_informativo h1{
-    font-size: 60px;
-    color: white;
-}
-
-.login--cuadro_informativo p{
-    font-size: 30px;
-    color: white;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.login--cuadro_registro{
-    width: 30%;
-    margin: 0 8%;
-    background-color: white;
-    border-radius: 5px;
-    text-align: center;
-    padding: 0px 0px;
-}
-
-
-.login--cuadro_registro input{
-    border-radius: 4px;
-    height: 30px;
-    margin: 10px 0;
-    padding: 5px;
-    outline: none;
-    border: 0.5px solid gray;
-}
-
-
-.login--btn_registrarse{
-    width: 78%;
-    background: white;
-    margin: 10px 0;
-    border-radius: 5px;
-    height: 40px;
-    padding: 5px;
-    outline: none;
-    border: 0.5px solid black;
-    color: black;
-}
-
-.login--btn_registrarse:hover{
-    background-color: black;
-    color: white;
-    cursor: pointer;
-}
-
-.login--btn_ingresar_fb{
-    width: 78%;
-    background: white;
-    margin: 10px 0;
-    border-radius: 5px;
-    height: 40px;
-    padding: 5px;
-    outline: none;
-    border: 0.5px solid blue;
-    margin-bottom: 20px;
-    color: blue;
-}
-
-.login--btn_ingresar_fb:hover{
-    background-color: blue;
-    color: white;
-}

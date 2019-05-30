@@ -1,6 +1,6 @@
 import React,{ Component } from "react";
 
-import NavBarUser from "./navbar/navbar_user";
+import NavBarUser from "./navbar_user/navbar_user";
 import InfoUsuario from "./info_usuario/info_usuario";
 import Footer from "../footer/footer"
 
