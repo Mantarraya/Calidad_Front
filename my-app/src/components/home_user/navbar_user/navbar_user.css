@@ -1,75 +1,38 @@
+/* Modal */
 
-/* NAV BAR USUARIO */
-
-.nav_lista{
-    z-index: 10;
+#navbar_user--modal{
+    display: none;
+    z-index: 11;
     position: fixed;
-    margin: 0px;
-    display: flex;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
-    background: #1d2126;
-    padding: 0px 0px;
-    align-items: baseline;
-    height: 60px;
+    padding-top: 200px;
+    background-color: rgba(0,0,0,0.7);
 }
 
-.item{
-    color: white;
-    list-style: none;
-    margin: 0;
-    padding: 10px 12px;
-}
-
-.logo{
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.cursos{
-    margin: 0px 20px;   
-    background: #303840;
-    border: 2px solid #303840;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    font-family: cursive;
-}
-.cursos:hover{
-    background: #1d2126;   
+#navbar_user--contenido_modal{
+    position: relative;
+    height: 100px;
+    width: 80%;
+    padding: 0;
+    margin: auto;
+    background-color: beige;
+    animation: 0.5s animacion_modal;
 }
 
 
-.buscador{
-    border: 1px solid black;
-    background: white;
-    border-radius: 4px;
-    height: 30px;
-    padding: 5px;
-    outline: none;
-    width: 300px;
+@keyframes animacion_modal{
+    from{
+        top: -300px;
+        visibility: 0;
+    }   
+    
+    to{
+        top: 0;
+        visibility: 1;
+    }
 }
 
-.buscador:checked{
-    border: none;
-}
-
-.derecha{
-    position: absolute;
-    display: flex;
-    right: 0;
-    top: 10px;
-    right: 10px
-}
-
-
-.cerrar_sesion{
-    cursor: pointer;
-    border-radius: 5px;
-    border: solid 2px  #303840;
-    text-decoration: none;
-}
-.cerrar_sesion:hover{
-    background-color: rebeccapurple;
-}
 
