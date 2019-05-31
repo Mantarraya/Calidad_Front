@@ -2,3 +2,235 @@
     margin-top:40px;
     margin-bottom:40px;
 }
+
+.cursos-frame-inicial{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(31, 127, 185,0.9);
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.flex-container,
+.flex-container-rutas,
+.cursos-flex-container,
+.cursos-2-flex-container,
+.cursos-3-flex-container,
+.cursos-logros-flex-container,
+.cursos-logros-cuadro-flex{
+    display: flex;
+}
+
+.cursos-frame-inicial-title{
+    margin-top: 90px;
+    color: white;
+}
+
+.cursos-frame-inicial-text,
+.cursos-frame-inicial-btn{
+    margin: auto;
+}
+
+.cursos-frame-inicial-text{
+    margin-top: 10px;
+}
+.cursos-frame-inicial-btn{
+    margin-top: -70px;
+}
+
+.cursos-frame-inicial-clases{
+    margin-left: 20px;
+}
+
+.cursos-frame-inicial-clases,
+.cursos-frame-inicial-tiempo{
+    color: rgb(228, 240, 247);
+}
+
+.cursos-frame-inicial-1,
+.cursos-frame-inicial-2{
+    height: 40px;
+}
+
+.cursos-frame-inicial-2{
+    margin-left: 10px;
+    width: 180px;
+    background-color: rgba(31, 127, 185,0.9);
+    border: 1px solid white;
+}
+
+.cursos-frame-inicial-2:hover{
+    background-color: white;
+}
+
+.cursos-frame-inicial-enlace-2{
+    color: white;
+}
+
+.cursos-frame-inicial-enlace-2:hover{
+    color: rgba(31, 127, 185,0.9);
+}
+
+.cursos-frame-inicial-1{
+    width: 100px;
+}
+
+.cursos-frame-inicial-enlace-1,
+.cursos-frame-inicial-enlace-2{
+    margin: auto;
+}
+
+.flex-container-rutas,
+.cursos-flex-container,
+.cursos-3-flex-container,
+.cursos-logros-flex-container{
+    margin-top: 20px;
+}
+
+.cursos-enlace-ruta{
+    margin-left: 600px;
+    border-radius: 2px;
+}
+
+.cursos-enlace{
+    margin-left: 825px;
+}
+
+.cursos-logros-enlace{
+    margin-left: 920px;
+}
+
+.cursos-algebra-ruta,
+.cursos-geometria-ruta,
+.cursos-aritmetica-ruta,
+.cursos-fisica-ruta{
+    display: flex;
+    width: 50%;
+    background: white;
+    box-shadow: 1px 1px 1px 1px grey;
+    border-radius: 5px;
+    border-left: solid 6px #FF4500;
+}
+
+.cursos-geometria-ruta{
+    border-left: solid 6px 	#48D1CC;
+}
+
+.cursos-aritmetica-ruta{
+    border-left: solid 6px red;
+}
+
+.cursos-fisica-ruta{
+    border-left: solid 6px #708090;
+}
+
+.cursos-geometria-ruta,
+.cursos-fisica-ruta{
+    margin-left: 20px;
+}
+
+.cursos-aritmetica-ruta,
+.cursos-fisica-ruta{
+    margin-top: 30px;
+}
+
+.cursos-alg{
+    margin-left: 5%;
+    text-align: center;
+}
+
+.cursos-enlace-resumen-alg,
+.cursos-enlace-resumen-geom{
+    margin-left: 300px;
+}
+
+.cursos-enlace-resumen-arit{
+    margin-left: 280px;
+}
+
+.cursos-enlace-resumen-fis{
+    margin-left: 340px;
+}
+
+
+.cursos-cuadro,
+.cursos-cuadro-geof,
+.cursos-cuadro-biolo,
+.cursos-cuadro-histo{
+    height: 150px;
+    width: 25%;
+    background-color: rgba(218, 251, 239);
+}
+
+.cursos-cuadro-geof,
+.cursos-cuadro-biolo,
+.cursos-cuadro-histo{
+    margin-left: 20px;
+}
+
+.cursos-cuadro-geof{
+    background-color: rgb(253, 250, 158)
+}
+
+.cursos-cuadro-biolo{
+    background-color: rgb(187, 255, 155);
+}
+
+.cursos-cuadro-histo{
+    background-color: rgb(255, 163, 162)
+}
+
+.cursos-enlace-final{
+    width: 100%;
+    height: 44.5px;
+    background-color: white;
+}
+
+.texto-enlace-final{
+    margin-top: 10px;
+}
+
+.cursos-trigo{
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+.cursos-logros-cuadro-1,
+.cursos-logros-cuadro-2{
+    width: 50%;
+    height: 220px;
+    background-color: rgb(45, 106, 246);
+}
+
+.cursos-logros-cuadro-2{
+    background-color: rgb(72, 170, 229);
+    margin-left: 20px;
+}
+
+.cursos-logros-titulo{
+    margin-top: 10px;
+    color: white;
+}
+
+.cursos-logros-fecha{
+    color: rgb(228, 240, 247);
+}
+
+.cursos-logros-titulo,
+.cursos-logros-fecha,
+.cursos-logros-img,
+.cursos-logros-titulo-curso,
+.cursos-logro-descripcion-curso,
+.cursos-logros-icono{
+    margin-left: 50px;
+}
+
+.cursos-logros-titulo-curso{
+    margin-top: 130px;
+    color: white;
+}
+
+.cursos-logro-descripcion-curso{
+    margin-top: 5px;
+    color: rgb(228, 240, 247);
+}
