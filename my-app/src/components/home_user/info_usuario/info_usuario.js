@@ -116,7 +116,7 @@ class InfoUsuario extends React.Component{
                         </div>
                         <div class="col-6">
                             <div className="info_usuario--header_btn_editar" onClick={this.editarDatosUsuario}>
-                                    Editar Datos
+                                    Editar datos
                             </div>
                         </div>
                     </div>
