@@ -5,19 +5,23 @@
 }
 
 .info_usuario--principal_user_grafica1{
-    height: 500px;
+    height: 630px;
     background: white;
     box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.4);
     border-radius: 5px;
 }
 
 .info_usuario--principal_user_grafica2,.info_usuario--principal_user_grafica3{
-    height: 240px;
+    height: 300px;
     background-color: white;
     box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.4);
     border-radius: 5px;
 }
 
 .info_usuario--principal_user_grafica3{
-    margin-top: 20px;
+    margin-top: 30px;
+}
+
+.tercer_grafico{
+    margin-top: 60px;
 }
