@@ -1,0 +1,19 @@
+.modal_user--ruta_aprendizaje{
+    margin: 20px 0;
+}
+
+
+.modal_user--ruta_aprendizaje_imagen{
+    background-color: rgb(236, 85, 85);
+    border-radius: 5px;
+}
+
+.modal_user--ruta_aprendizaje_contenido{
+    color: gray;
+    cursor: pointer;
+}
+
+
+.modal_user--ruta_aprendizaje_contenido:hover{
+    color: black;
+}

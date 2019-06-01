@@ -7,7 +7,7 @@ import Login from './components/login/login'
 import HomeUser from "./components/home_user/home_user";
 import Dashboard from "./components/dashboard/dashboard";
 import Error404 from "./components/page/error404";
-
+import CursoUser from "./components/home_user/curso_user/curso_user";
 
 const AppRoutes = ()=>
     <App>
@@ -15,6 +15,7 @@ const AppRoutes = ()=>
             <Route exact path="/" component={Dashboard}></Route>
             <Route exact path="/login" component={Login}></Route>
             <Route exact path="/home_user" component={HomeUser}></Route>
+            <Route exact path="/home_user/curso/:cursoId" component={CursoUser}></Route>
             <Route component={Error404}></Route>
         </Switch>
     </App>;

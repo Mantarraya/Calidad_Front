@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './navbar_user.css';
+import ModalUser from "./modal_user/modal_user";
 
 class NavBarUser extends React.Component{
 
@@ -44,7 +45,7 @@ class NavBarUser extends React.Component{
 
                 <div id="navbar_user--modal">
                     <div id="navbar_user--contenido_modal">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium magni officia illum, fuga quasi, deserunt dolorum corporis rerum nesciunt nisi incidunt unde vitae dolor in pariatur reprehenderit laborum reiciendis, aliquam.
+                        <ModalUser/>
                     </div>
                 </div>
                 
