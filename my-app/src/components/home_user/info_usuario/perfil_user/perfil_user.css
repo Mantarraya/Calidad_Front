@@ -1,13 +1,26 @@
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
 .info_usuario--perfil_user {
     margin-top: 40px;
     margin-bottom: 40px;
+    font-family: 'Lato', 'sans-serif';
 }
 
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
-body {
-    font-family: 'Lato', 'sans-serif';
-    padding: 0;
-    margin: 0;
+.info_usuario--perfil_user_table>tbody>tr {
+    border-top: 1px solid rgb(221, 221, 221);
+}
+
+.info_usuario--perfil_user_emphasis {
+    border-top: 4px solid transparent;
+}
+
+.info_usuario--perfil_user_emphasis:hover {
+    border-top: 4px solid #1abc9c;
+}
+
+.info_usuario--perfil_user_emphasis h2 {
+    margin-bottom: 0;
 }
 
 .col-xs-12 {
@@ -41,17 +54,6 @@ figcaption.ratings a:hover {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.emphasis {
-    border-top: 4px solid transparent;
-}
-
-.emphasis:hover {
-    border-top: 4px solid #1abc9c;
-}
-
-.emphasis h2 {
-    margin-bottom: 0;
-}
 
 span.tags {
     top: 1000px;
@@ -94,8 +96,4 @@ span.tags {
     left: 50%;
     margin-left: -10px;
     z-index: 10;
-}
-
-.table-user-information>tbody>tr {
-    border-top: 1px solid rgb(221, 221, 221);
 }
