@@ -7,7 +7,7 @@ export default class PerfilUser extends React.Component {
         return (
 
             <div className="container info_usuario--perfil_user">
-                <table class="table table-user-information">
+                <table class="table info_usuario--perfil_user_table">
 
                     <tr>
                         <td> <strong> Nombres: </strong></td>
@@ -47,14 +47,14 @@ export default class PerfilUser extends React.Component {
 
                     <br></br> <br></br>
 
-                    <div class="col-xs-12 col-sm-4 emphasis">
+                    <div class="col-xs-12 col-sm-4 info_usuario--perfil_user_emphasis">
                         <h2> <strong> 10 </strong></h2>
                         <p> <small> Asignaturas </small></p>
                         <button class="btn btn-success btn-block"> <span class="fa fa-plus-circle"> </span> Cursos matrículados </button>
                     </div>
 
 
-                    <div class="col-xs-12 col-sm-4 emphasis">
+                    <div class="col-xs-12 col-sm-4 info_usuario--perfil_user_emphasis">
                         <h2> <strong> 4 </strong></h2>
                         <p> <small> Profesores </small></p>
                         <button class="btn btn-info btn-block"> <span class="fa fa-user"> </span> Profesores contratados </button>
