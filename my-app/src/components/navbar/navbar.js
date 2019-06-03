@@ -6,29 +6,35 @@ class NavBar extends React.Component{
 
     constructor(props){
         super(props);
-        this.iniciarSesion=this.iniciarSesion.bind(this);    
+        this.iniciarSesion=this.iniciarSesion.bind(this);  
     }
 
     iniciarSesion(e){
+
+        var parent = this;  
         e.preventDefault();
 
         fetch("https://back-calidad.herokuapp.com/api/login-alumno",{
             method:'POST',
             headers:{
-                'Content-Type':'application/x-www-form-urlencoded',
-                'Accept':'application/json'
+                'Accept': 'application/json, text/plain, */*',
+                'Content-Type': 'application/json'
             },
             body:JSON.stringify({
-                'name':'elvis1234',
-                'password':'1234'
+                'email':'anacleto@gmail.com',
+                'password':'jhony'
             })
         })
         .then(function(response){
             console.log(response)
+            console.log("---------------")
             return response.text();
         })
         .then(function (data){
-            console.log(data)
+            if(JSON.parse(data).message==="Login Satisfactorio"){
+                localStorage.setItem("mytoken","12345")
+                parent.props.history.push('/home_user')
+            }
 
         })
         .catch(err=>{
@@ -36,7 +42,7 @@ class NavBar extends React.Component{
             alert("error")
         })
 
-        this.props.history.push('/home_user')
+
         e.preventDefault();
     }
 

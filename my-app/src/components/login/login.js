@@ -4,13 +4,28 @@ import NavBar from "../navbar/navbar";
 
 import './login.css'
 import Footer from "../footer/footer";
+import AuthEstudiante from '../restricciones/auth_estudiante'
 
 export default class Login extends Component{
 
     constructor(props){
         super(props)
 
+        var p=new AuthEstudiante()
+        if(!p.verificarEstudiante()){
+            this.props.history.push('/home_user');
+        }
         this.registrarNuevoUsuario=this.registrarNuevoUsuario.bind(this)
+        this.iniciarSesionConFacebook=this.iniciarSesionConFacebook.bind(this)
+    }
+
+
+
+    iniciarSesionConFacebook(e){
+        fetch("https://back-calidad.herokuapp.com/api/login/facebook",{
+
+        });
+        
     }
 
     registrarNuevoUsuario(e){
@@ -23,11 +38,11 @@ export default class Login extends Component{
                 'Content-Type': 'application/json'
             },
             body:JSON.stringify({
-                "username": "elvis1234",
+                "username": "11",
                 "password": "1234",
                 "firstname": "elvis",
                 "lastname": "zapatero",
-                "email": "elvissoftnife28@gmail.com" 
+                "email": "prueba@hotmail.com" 
             })
         })
         .then(function(response){
@@ -76,7 +91,7 @@ export default class Login extends Component{
                                             <input type="text"  className="form-control" name="username"id="usernameField"  placeholder="Username"value=""/>
                                         </div>
                                         <button type="submit" className="btn btn-outline-dark w-100" onClick={this.registrarNuevoUsuario}> <span class="font-weight-bold">Regístrate</span></button>
-                                        <p class="btn  btn-outline-primary w-100 mt-3 " href="#">
+                                        <p class="btn  btn-outline-primary w-100 mt-3 " onClick={this.iniciarSesionConFacebook}>
                                             <i className="fab fa-facebook"></i>
                                             <span className="font-weight-bold"> Ingresa con Facebook</span>
                                         </p>

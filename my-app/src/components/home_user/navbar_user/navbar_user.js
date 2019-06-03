@@ -5,6 +5,16 @@ import ModalUser from "./modal_user/modal_user";
 
 class NavBarUser extends React.Component{
 
+    constructor(props){
+        super(props)
+
+        this.btnCerrarSesion=this.btnCerrarSesion.bind(this)
+    }
+
+    btnCerrarSesion(e){
+        localStorage.removeItem('mytoken');
+    }
+
     componentDidMount(){
         var modal = document.getElementById("navbar_user--modal");
         var btn = document.getElementById("navbar_user--curso");
@@ -33,7 +43,7 @@ class NavBarUser extends React.Component{
                         <Link class="nav-link" id="navbar_user--curso">Cursos<span class="sr-only">(current)</span></Link>
                     </li>
                     <li class="nav-item">
-                        <Link class="nav-link" to="/login">Cerrar Sesion</Link>
+                        <Link class="nav-link" to="/login" onClick={this.btnCerrarSesion}>Cerrar Sesion</Link>
                     </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">

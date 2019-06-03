@@ -1,10 +1,21 @@
 import React,{ Component } from "react";
+import { withRouter } from "react-router-dom";
 
 import NavBar from "../navbar/navbar";
 import './dashboard.css';
 
+import AuthEstudiante from '../restricciones/auth_estudiante'
 
 class Dashboard extends Component{
+
+    constructor(props){
+        super(props)
+
+        var p=new AuthEstudiante()
+        if(!p.verificarEstudiante()){
+            this.props.history.push('/home_user');
+        }
+    }
 
     render(){
         return(
@@ -85,4 +96,4 @@ class Dashboard extends Component{
     }
 }
 
-export default Dashboard;
+export default withRouter(Dashboard);

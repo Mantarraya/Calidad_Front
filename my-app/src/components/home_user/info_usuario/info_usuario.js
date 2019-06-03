@@ -13,7 +13,11 @@ class InfoUsuario extends React.Component{
         super(props)
 
         this.state={
-            valor:0
+            valor:0,
+            nombres:'',
+            apellidos:'',
+            username:'',
+            email:''
         }
 
 
@@ -65,7 +69,20 @@ class InfoUsuario extends React.Component{
             enlace_perfil.style.borderBottom="3px solid transparent";
             enlace_cursos.style.borderBottom="3px solid white";
         }
+
+        fetch("https://back-calidad.herokuapp.com/api/profile",{
+            method:"GET"
+        })
+        .then(function (response){
+            console.log("extrayendo info usuario")
+            console.log(response)
+            return response.text();
+        })
+        .then(function (data){
+            console.log(data)
+        })
     }
+
 
 
     cargarPrincipal(e){
