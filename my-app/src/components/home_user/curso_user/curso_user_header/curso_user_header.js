@@ -22,7 +22,7 @@ export default class CursoUserHeader extends React.Component{
                     </div>
                 </div>
                 <div className="card curso_user_header--content-img">
-                    <img src="http://tutorio-bootstrap.frontendmatter.com/assets/images/paths/angular_40x40@2x.png" alt=""></img>
+                    <img src="http://tutorio-bootstrap.frontendmatter.com/assets/images/paths/angular_40x40@2x.png" alt="curso-escogido"></img>
 
                 </div>
             </div>
