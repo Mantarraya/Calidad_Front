@@ -56,7 +56,7 @@ export default class PrincipalUser extends React.Component{
             <div className="container info_usuario--principal_user">
                 <div className="row">
                     <div className="col-6 info_usuario--principal_user_canvas">
-                        <div class="info_usuario--principal_user_grafica1">
+                        <div className="info_usuario--principal_user_grafica1">
                             <Grafico1 chartData={this.state.chartData} legendPosition="bottom"/> 
                             <div className="tercer_grafico">
                                 <Grafico2 chartData={this.state.chartData} legendPosition="bottom"/>                           
@@ -64,10 +64,10 @@ export default class PrincipalUser extends React.Component{
                         </div>
                     </div>
                     <div className="col-6">
-                        <div class="info_usuario--principal_user_grafica2">
+                        <div className="info_usuario--principal_user_grafica2">
                             <Grafico2 chartData={this.state.chartData} legendPosition="bottom"/>
                         </div>
-                        <div class="info_usuario--principal_user_grafica3">
+                        <div className="info_usuario--principal_user_grafica3">
                             <Grafico3 chartData={this.state.chartData} legendPosition="bottom"/>
                         </div>
                     </div>

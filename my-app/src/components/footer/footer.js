@@ -47,9 +47,9 @@ export default class Footer extends React.Component{
                 </div>
 
                 
-                <div class="footer_inferior">
-                    <div class="footer_inferior-contenido">
-                        <div class="footer_inferior--seguidor">
+                <div className="footer_inferior">
+                    <div className="footer_inferior-contenido">
+                        <div className="footer_inferior--seguidor">
                             <h3>Siguemos en</h3>
                             <ul>
                                 <li>F</li>
@@ -58,7 +58,7 @@ export default class Footer extends React.Component{
                                 <li>Y</li>
                             </ul>
                         </div>
-                        <div class="footer_inferior--info">
+                        <div className="footer_inferior--info">
                             <p>
                                 <span>Terminos</span>
                                 <span>Politica Privasidad</span>

@@ -35,9 +35,9 @@ class ModalUserCursos extends React.Component{
                         Compositiog
                     </div>
                 </div>
-                <div class="row">
-                            <div class="col-lg-12">
-                                <button class="btn btn-secondary btn-block modal_user_cursos--cuadro_btn_ver_mas">Ver mas</button>
+                <div className="row">
+                            <div className="col-lg-12">
+                                <button className="btn btn-secondary btn-block modal_user_cursos--cuadro_btn_ver_mas">Ver mas</button>
                             </div>
                     </div>
             </div>

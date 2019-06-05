@@ -87,11 +87,11 @@ export default class Login extends Component{
                                         <div className="form-group login--cuadro_principal_password">
                                             <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password"/>
                                         </div>
-                                        <div class="form-group login--cuadro_principal_username">
+                                        <div className="form-group login--cuadro_principal_username">
                                             <input type="text"  className="form-control" name="username"id="usernameField"  placeholder="Username"value=""/>
                                         </div>
-                                        <button type="submit" className="btn btn-outline-dark w-100" onClick={this.registrarNuevoUsuario}> <span class="font-weight-bold">Regístrate</span></button>
-                                        <p class="btn  btn-outline-primary w-100 mt-3 " onClick={this.iniciarSesionConFacebook}>
+                                        <button type="submit" className="btn btn-outline-dark w-100" onClick={this.registrarNuevoUsuario}> <span className="font-weight-bold">Regístrate</span></button>
+                                        <p className="btn  btn-outline-primary w-100 mt-3 " onClick={this.iniciarSesionConFacebook}>
                                             <i className="fab fa-facebook"></i>
                                             <span className="font-weight-bold"> Ingresa con Facebook</span>
                                         </p>

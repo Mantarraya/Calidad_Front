@@ -50,6 +50,11 @@ class InfoUsuario extends React.Component{
     }
 
     componentDidMount () {
+
+
+        var parent = this; 
+
+
         const enlace_principal = document.getElementById("info_usuario--header_enlaces_principal");
         const enlace_perfil = document.getElementById("info_usuario--header_enlaces_perfil");
         const enlace_cursos = document.getElementById("info_usuario--header_enlaces_cursos");
@@ -70,16 +75,19 @@ class InfoUsuario extends React.Component{
             enlace_cursos.style.borderBottom="3px solid white";
         }
 
-        fetch("https://back-calidad.herokuapp.com/api/profile",{
-            method:"GET"
-        })
-        .then(function (response){
-            console.log("extrayendo info usuario")
-            console.log(response)
-            return response.text();
+        fetch("https://back-calidad.herokuapp.com/api/alumno/anacleto@gmail.com")
+        .then(function (response){ 
+            return response.json();
         })
         .then(function (data){
             console.log(data)
+            parent.setState({
+                username:data.username,
+                email:data.email
+            })
+            
+        }).catch(function (err){
+            console.log(err)
         })
     }
 
@@ -120,18 +128,18 @@ class InfoUsuario extends React.Component{
     render(){
         return(
             <div>
-                <div class="container-fluid bg-primary info_usuario--header">
+                <div className="container-fluid bg-primary info_usuario--header">
                     <div className="row">
                         <div className="col-2">
                             <img src={logo} alt="" className=""/>
                         </div>
                         <div className="col-4">
                             <div className="info_usuario--header_info_user">
-                                <b>Luis Huayta</b>
-                                <p>Estudiante</p>
+                                <b>{this.state.username}</b>
+                                <p>{this.state.email}</p>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div className="col-6">
                             <div className="info_usuario--header_btn_editar" onClick={this.editarDatosUsuario}>
                                     Editar datos
                             </div>
