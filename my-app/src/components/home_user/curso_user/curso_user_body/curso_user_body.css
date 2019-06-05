@@ -1,7 +1,131 @@
 .curso_user_body--contenido{
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 10px;
     align-items: baseline;
     padding-left: 10%;
     padding-right: 10%;
+    display: flex;
+    margin-top: 20px;
+}
+
+.curso_user_body--parrafo{
+    color: black;
+    font-size: 15px;
+    padding-left: 100px;
+
+}
+
+.curso_user_body--parrafo>b{
+    font-size: 25px;
+
+}
+
+.curso_user_body--content-parrafo{
+    margin-top: 20px;
+
+}
+
+
+.curso_user_body-flex-container,
+.curso_user_body-2-flex-container{
+    display: flex;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 20px;
+}
+
+.curso_user_body-2-flex-container{
+    margin-block: 20px;
+}
+
+
+.curso_user_body-cuadro-beginner1{
+    height: 150px;
+    width: 25%;
+    background-color: rgb(63, 98, 194);
+}
+
+.curso_user_body-cuadro-beginner2{
+    height: 150px;
+    width: 25%;
+    background-color: rgb(194, 192, 63);
+}
+
+.curso_user_body-cuadro-beginner3{
+    height: 150px;
+    width: 25%;
+    background-color: rgb(63, 194, 81);
+}
+
+.curso_user_body-cuadro-beginner4{
+    height: 150px;
+    width: 25%;
+    background-color: rgb(215, 231, 67);
+}
+
+
+.curso_user_body-2-flex-container{
+    margin-block: 20px;
+}
+
+
+.curso_user_body-cuadro-beginner5{
+    height: 150px;
+    width: 25%;
+    background-color: rgb(134, 161, 196);
+}
+
+.curso_user_body-cuadro-beginner6{
+    height: 150px;
+    width: 25%;
+    background-color: rgb(255, 0, 0);
+}
+
+.curso_user_body-cuadro-beginner7{
+    height: 150px;
+    width: 25%;
+    background-color: rgb(121, 224, 255);
+}
+
+.curso_user_body-cuadro-beginner8{
+    height: 150px;
+    width: 25%;
+    background-color: rgb(202, 132, 211);
+}
+
+.curso_user_body-1,
+.curso_user_body-2,
+.curso_user_body-3,
+.curso_user_body-4,
+.curso_user_body-5,
+.curso_user_body-6,
+.curso_user_body-7,
+.curso_user_body-8{
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+
+.curso_user_body-enlace-final{
+    width: 100%;
+    height: 44.5px;
+    background-color: white;
+}
+
+.curso_user_body-texto-enlace-final{
+    margin-top: 10px;
+}
+
+
+
+.curso_user_body-cuadro-beginner2,
+.curso_user_body-cuadro-beginner3,
+.curso_user_body-cuadro-beginner4{
+    margin-left: 20px;
+}
+
+.curso_user_body-cuadro-beginner6,
+.curso_user_body-cuadro-beginner7,
+.curso_user_body-cuadro-beginner8{
+    margin-left: 20px;
 }
