@@ -36,8 +36,8 @@ export default class Cursos extends React.Component{
                             <h2 className="text-center">Cursos disponibles</h2>
                         </div>
                         <div className="info_usuario--cursos-flex-container info_usuario--cursos-frame-inicial-text">
-                            <p className="info_usuario--cursos-frame-inicial-tiempo">50 minutos restantes</p>
-                            <p className="info_usuario--cursos-frame-inicial-clases">12 clases</p>
+                            <p className="info_usuario--cursos-frame-inicial-tiempo">Todos los temas actualizados</p>
+                            <p className="info_usuario--cursos-frame-inicial-clases">12 cursos</p>
                         </div>
                         <div className="info_usuario--cursos-flex-container info_usuario--cursos-frame-inicial-btn">
                             <div className="card info_usuario--cursos-frame-inicial-1">
