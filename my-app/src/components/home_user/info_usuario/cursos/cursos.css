@@ -109,15 +109,15 @@
     background: white;
     box-shadow: 1px 1px 1px 1px grey;
     border-radius: 5px;
-    border-left: solid 6px #FF4500;
+    border-left: solid 6px red;
 }
 
 .info_usuario--cursos-geometria-ruta{
-    border-left: solid 6px 	#48D1CC;
+    border-left: solid 6px 	#FF4500;
 }
 
 .info_usuario--cursos-aritmetica-ruta{
-    border-left: solid 6px red;
+    border-left: solid 6px #48D1CC;
 }
 
 .info_usuario--cursos-fisica-ruta{

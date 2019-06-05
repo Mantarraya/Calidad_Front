@@ -57,19 +57,19 @@ export default class Cursos extends React.Component{
                     <div className="info_usuario--cursos-flex-container-rutas">
                         <div className="info_usuario--cursos-algebra-ruta">
                             <img src="http://tutorio-bootstrap.frontendmatter.com/assets/images/paths/angular_40x40.svg" alt="curso-0"></img>
-                            <p className="info_usuario--cursos-alg"><b>{this.state.lista_cursos[0]==null?"":this.state.lista_cursos[0].nombre}</b></p>
+                            <p className="info_usuario--cursos-alg"><b>{this.state.lista_cursos[1]==null?"":this.state.lista_cursos[1].nombre}</b></p>
                             <p className="info_usuario--cursos-enlace-resumen-alg">Resumen</p>
                         </div>
                         <div className="info_usuario--cursos-geometria-ruta">
                             <img src="http://tutorio-bootstrap.frontendmatter.com/assets/images/paths/angular_40x40.svg" alt="curso-2"></img>
-                            <p className="info_usuario--cursos-geom"><b>{this.state.lista_cursos[2]==null?"":this.state.lista_cursos[2].nombre}</b></p>
+                            <p className="info_usuario--cursos-geom"><b>{this.state.lista_cursos[0]==null?"":this.state.lista_cursos[0].nombre}</b></p>
                             <p className="info_usuario--cursos-enlace-resumen-geom">Resumen</p>
                         </div>
                     </div>
                     <div className="info_usuario--cursos-flex-container">
                         <div className="info_usuario--cursos-aritmetica-ruta">
                             <img src="http://tutorio-bootstrap.frontendmatter.com/assets/images/paths/angular_40x40.svg" alt="curso-1"></img>
-                            <p className="info_usuario--cursos-arit"><b>{this.state.lista_cursos[1]==null?"":this.state.lista_cursos[1].nombre}</b></p>
+                            <p className="info_usuario--cursos-arit"><b>{this.state.lista_cursos[2]==null?"":this.state.lista_cursos[2].nombre}</b></p>
                             <p className="info_usuario--cursos-enlace-resumen-arit">Resumen</p>
                         </div>
                         <div className="info_usuario--cursos-fisica-ruta">
@@ -130,13 +130,13 @@ export default class Cursos extends React.Component{
                         <div className="card info_usuario--cursos-logros-cuadro-1">
                             <div className="info_usuario--cursos-logros-cuadro-flex">
                                 <div>
-                                    <h5 className="info_usuario--cursos-logros-titulo">Logro</h5>
-                                    <p className="info_usuario--cursos-logros-fecha">05 Junio, 2019</p>
+                                    <h5 className="info_usuario--cursos-logros-titulo">Reto</h5>
+                                    <p className="info_usuario--cursos-logros-fecha">25 Junio, 2019</p>
                                     <img className="info_usuario--cursos-logros-img" src="http://tutorio-bootstrap.frontendmatter.com/assets/images/illustration/achievement/128/white.png" alt="logro-cup"></img>
                                 </div> 
                                 <div>
-                                    <h5 className="info_usuario--cursos-logros-titulo-curso">Álgebra</h5>
-                                    <p className="info_usuario--cursos-logro-descripcion-curso">Conocimiento avanzando en Productos Notables</p>
+                                    <h5 className="info_usuario--cursos-logros-titulo-curso">Ciencias Naturales</h5>
+                                    <p className="info_usuario--cursos-logro-descripcion-curso">Conocimiento avanzando en Física y Química</p>
                                 </div>
                                 <div>
                                     <img className="info_usuario--cursos-logros-icono" src="http://tutorio-bootstrap.frontendmatter.com/assets/images/paths/flinto_40x40@2x.png" alt="logro-curso"></img>
@@ -146,13 +146,13 @@ export default class Cursos extends React.Component{
                         <div className="card info_usuario--cursos-logros-cuadro-2">
                         <div className="info_usuario--cursos-logros-cuadro-flex">
                                 <div>
-                                    <h5 className="info_usuario--cursos-logros-titulo">Logro</h5>
-                                    <p className="info_usuario--cursos-logros-fecha">04 Junio, 2019</p>
+                                    <h5 className="info_usuario--cursos-logros-titulo">Reto</h5>
+                                    <p className="info_usuario--cursos-logros-fecha">24 Junio, 2019</p>
                                     <img className="info_usuario--cursos-logros-img" src="http://tutorio-bootstrap.frontendmatter.com/assets/images/illustration/achievement/128/white.png" alt="logro-cup"></img>
                                 </div> 
                                 <div>
-                                    <h5 className="info_usuario--cursos-logros-titulo-curso">Aritmética</h5>
-                                    <p className="info_usuario--cursos-logro-descripcion-curso">Conocimiento avanzando en Razones y Proporciones</p>
+                                    <h5 className="info_usuario--cursos-logros-titulo-curso">Ciencias Sociales</h5>
+                                    <p className="info_usuario--cursos-logro-descripcion-curso">Conocimiento avanzando Historia y Geografía</p>
                                 </div>
                                 <div>
                                     <img className="info_usuario--cursos-logros-icono" src="http://tutorio-bootstrap.frontendmatter.com/assets/images/paths/angular_40x40@2x.png" alt="logro-curso"></img>

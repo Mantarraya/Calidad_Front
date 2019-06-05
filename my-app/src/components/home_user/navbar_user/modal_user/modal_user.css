@@ -3,9 +3,27 @@
 }
 
 
-.modal_user--ruta_aprendizaje_imagen{
-    background-color: rgb(236, 85, 85);
+.modal_user--ruta_aprendizaje_imagen-arit,
+.modal_user--ruta_aprendizaje_imagen-alg,
+.modal_user--ruta_aprendizaje_imagen-geom,
+.modal_user--ruta_aprendizaje_imagen-fis{
+    background-color: rgb(255, 0, 0);
     border-radius: 5px;
+}
+
+.modal_user--ruta_aprendizaje_imagen-alg{
+    background-color: #FF4500;
+
+}
+
+.modal_user--ruta_aprendizaje_imagen-geom{
+    background-color: #48D1CC;
+
+}
+
+.modal_user--ruta_aprendizaje_imagen-fis{
+    background-color: #708090;
+
 }
 
 .modal_user--ruta_aprendizaje_contenido{

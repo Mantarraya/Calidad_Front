@@ -8,12 +8,28 @@ class ModalUserCursos extends React.Component{
 
     constructor(props){
         super(props)
-        this.mostrarVentanaCurso=this.mostrarVentanaCurso.bind(this)
+        this.state={
+            lista_cursos:[]
+        }
+        this.mostrarVentanaCurso=this.mostrarVentanaCurso.bind(this);
     }
 
+    componentDidMount(){
+        const that = this;
+        fetch('https://back-calidad.herokuapp.com/api/curso/obtenerCursos')
+        .then((res)=>res.json())
+        .then((data)=>{
+
+            that.setState({
+                lista_cursos:data
+            })
+            console.log(that.state.lista_cursos)
+
+        })
+    }
 
     mostrarVentanaCurso(e){
-        this.props.history.push('/home_user/curso/1')
+        //this.props.history.push('/home_user/curso/1')
         e.preventDefault();        
     }
 
@@ -23,16 +39,16 @@ class ModalUserCursos extends React.Component{
                 <p>Cursos</p>
                 <div className="modal_user_cursos--cuadro_lista_opciones">
                     <div onClick={this.mostrarVentanaCurso}>
-                        Camara
+                        {this.state.lista_cursos[3]==null?"":this.state.lista_cursos[3].nombre}
                     </div>
                     <div onClick={this.mostrarVentanaCurso}>
-                        Raw Processing
+                        {this.state.lista_cursos[5]==null?"":this.state.lista_cursos[5].nombre}
                     </div>
                     <div onClick={this.mostrarVentanaCurso}>
-                        Masking
+                        {this.state.lista_cursos[6]==null?"":this.state.lista_cursos[6].nombre}
                     </div>
                     <div onClick={this.mostrarVentanaCurso}>
-                        Compositiog
+                        {this.state.lista_cursos[7]==null?"":this.state.lista_cursos[7].nombre}
                     </div>
                 </div>
                 <div className="row">
