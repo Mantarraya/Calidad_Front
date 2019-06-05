@@ -6,7 +6,28 @@ class NavBar extends React.Component{
 
     constructor(props){
         super(props);
+
+        this.state={
+            email:'',
+            pass:''
+        }
+
         this.iniciarSesion=this.iniciarSesion.bind(this);  
+        this.obtenerEmail=this.obtenerEmail.bind(this)
+        this.obtnerPassword=this.obtnerPassword.bind(this)
+    }
+
+
+    obtenerEmail(e){
+        this.setState({
+            email:e.target.value
+        })
+    }
+
+    obtnerPassword(e){
+        this.setState({
+            pass:e.target.value
+        })
     }
 
     iniciarSesion(e){
@@ -21,8 +42,8 @@ class NavBar extends React.Component{
                 'Content-Type': 'application/json'
             },
             body:JSON.stringify({
-                'email':'anacleto@gmail.com',
-                'password':'jhony'
+                'email':parent.state.email,
+                'password':parent.state.pass
             })
         })
         .then(function(response){
@@ -32,7 +53,7 @@ class NavBar extends React.Component{
         })
         .then(function (data){
             if(JSON.parse(data).message==="Login Satisfactorio"){
-                localStorage.setItem("mytoken","12345")
+                localStorage.setItem("mytoken",parent.state.email)
                 parent.props.history.push('/home_user')
             }
 
@@ -67,8 +88,8 @@ class NavBar extends React.Component{
                             </li>
                         </ul>
                         <form className="form-inline my-2 my-lg-0">
-                            <input className="form-control mr-sm-2" type="email" placeholder="Email"/>
-                            <input className="form-control  mr-sm-2" type="password" name="" placeholder="Contraseña" value=""/>
+                            <input className="form-control mr-sm-2" type="email" placeholder="Email" value={this.state.email} onChange={this.obtenerEmail}/>
+                            <input className="form-control  mr-sm-2" type="password" name="" placeholder="Contraseña" value={this.state.pass} onChange={this.obtnerPassword}/>
                             <button className="btn btn-outline-success my-2 my-sm-0" type="submit" onClick={this.iniciarSesion}>Entrar</button>
                         </form>
                     </div>

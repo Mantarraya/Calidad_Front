@@ -75,7 +75,7 @@ class InfoUsuario extends React.Component{
             enlace_cursos.style.borderBottom="3px solid white";
         }
 
-        fetch("https://back-calidad.herokuapp.com/api/alumno/anacleto@gmail.com")
+        fetch("https://back-calidad.herokuapp.com/api/alumno/"+localStorage.getItem('mytoken'))
         .then(function (response){ 
             return response.json();
         })
@@ -85,6 +85,14 @@ class InfoUsuario extends React.Component{
                 username:data.username,
                 email:data.email
             })
+
+
+            localStorage.setItem("id_user",data._id)
+            localStorage.setItem("nombres",data.firstname)
+            localStorage.setItem("apellidos",data.lastname)
+            localStorage.setItem("username",data.username)
+            localStorage.setItem("email",data.email)
+
             
         }).catch(function (err){
             console.log(err)

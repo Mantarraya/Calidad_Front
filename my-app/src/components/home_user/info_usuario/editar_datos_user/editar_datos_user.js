@@ -41,33 +41,9 @@ export default class EditarDatosUser extends React.Component{
     
     componentDidMount(){
         const steppers1=document.getElementById("info_usuario--editar_steppers1")
-        const steppers2=document.getElementById("info_usuario--editar_steppers2")
-        const steppers3=document.getElementById("info_usuario--editar_steppers3")
-        const steppers4=document.getElementById("info_usuario--editar_steppers4")
 
         steppers1.onclick=()=>{
             steppers1.classList.add("info_usuario--editar_step-active");
-            steppers2.classList.remove("info_usuario--editar_step-active");
-            steppers3.classList.remove("info_usuario--editar_step-active");
-            steppers4.classList.remove("info_usuario--editar_step-active");
-        }
-        steppers2.onclick=()=>{
-            steppers1.classList.remove("info_usuario--editar_step-active");
-            steppers2.classList.add("info_usuario--editar_step-active");
-            steppers3.classList.remove("info_usuario--editar_step-active");
-            steppers4.classList.remove("info_usuario--editar_step-active");
-        }
-        steppers3.onclick=()=>{
-            steppers1.classList.remove("info_usuario--editar_step-active");
-            steppers2.classList.remove("info_usuario--editar_step-active");
-            steppers3.classList.add("info_usuario--editar_step-active");
-            steppers4.classList.remove("info_usuario--editar_step-active");
-        }
-        steppers4.onclick=()=>{
-            steppers1.classList.remove("info_usuario--editar_step-active");
-            steppers2.classList.remove("info_usuario--editar_step-active");
-            steppers3.classList.remove("info_usuario--editar_step-active");
-            steppers4.classList.add("info_usuario--editar_step-active");
         }
     }
 
@@ -105,36 +81,12 @@ export default class EditarDatosUser extends React.Component{
                         <this.CompFormularios numOption={this.state.valor}/>
                     </div>
                     <div className="col-4 info_usuario--editar_step_main">
-                        <div class="info_usuario--editar_step info_usuario--editar_step-active"  id="info_usuario--editar_steppers1" onClick={this.metodoInformacionBasica}>
+                        <div class="info_usuario--editar_step info_usuario--editar_step-active"  id="info_usuario--editar_steppers1" >
                             <div>
                                 <div class="info_usuario--editar_circle">1</div>
                             </div>
                             <div>
                                 <div class="info_usuario--editar_title">Informacion Basica</div>
-                            </div>
-                        </div>
-                        <div class="info_usuario--editar_step" id="info_usuario--editar_steppers2" onClick={this.metodoPerfilPrivacidad}>
-                            <div>
-                                <div class="info_usuario--editar_circle">2</div>
-                            </div>
-                            <div>
-                                <div class="info_usuario--editar_title">Perfil - Privacidad</div>
-                            </div>
-                        </div>
-                        <div class="info_usuario--editar_step" id="info_usuario--editar_steppers3" onClick={this.metodoNotificaciones}>
-                            <div>
-                                <div class="info_usuario--editar_circle">3</div>
-                            </div>
-                            <div>
-                                <div class="info_usuario--editar_title">Notificaciones Email</div>
-                            </div>
-                        </div>
-                        <div class="info_usuario--editar_step" id="info_usuario--editar_steppers4" onClick={this.metodoCambiarContrasenia}>
-                            <div>
-                                <div class="info_usuario--editar_circle">4</div>
-                            </div>
-                            <div>
-                                <div class="info_usuario--editar_title">Cambiar Contraseña</div>
                             </div>
                         </div>
                     </div>
