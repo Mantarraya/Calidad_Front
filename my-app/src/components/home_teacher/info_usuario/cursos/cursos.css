@@ -1,0 +1,273 @@
+.info_usuario--cursos{
+    margin-top:40px;
+    margin-bottom:40px;
+}
+
+.info_usuario--cursos-frame-inicial{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(31, 127, 185,0.9);
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.info_usuario--cursos-flex-container,
+.info_usuario--cursos-flex-container-rutas,
+.info_usuario--cursos-flex-container,
+.info_usuario--cursos-2-flex-container,
+.info_usuario--cursos-3-flex-container,
+.info_usuario--cursos-logros-flex-container,
+.info_usuario--cursos-logros-cuadro-flex{
+    display: flex;
+}
+
+.info_usuario--cursos-frame-inicial-title{
+    margin-top: 90px;
+    color: white;
+}
+
+.info_usuario--cursos-frame-inicial-text,
+.info_usuario--cursos-frame-inicial-btn{
+    margin: auto;
+}
+
+.info_usuario--cursos-frame-inicial-text{
+    margin-top: 10px;
+}
+.info_usuario--cursos-frame-inicial-btn{
+    margin-top: -70px;
+}
+
+.info_usuario--cursos-frame-inicial-clases{
+    margin-left: 20px;
+}
+
+.info_usuario--cursos-frame-inicial-clases,
+.info_usuario--cursos-frame-inicial-tiempo{
+    color: rgb(228, 240, 247);
+}
+
+.info_usuario--cursos-frame-inicial-1,
+.info_usuario--cursos-frame-inicial-2{
+    height: 40px;
+}
+
+.info_usuario--cursos-frame-inicial-2{
+    margin-left: 10px;
+    width: 180px;
+    background-color: rgba(31, 127, 185,0.9);
+    border: 1px solid white;
+}
+
+.info_usuario--cursos-frame-inicial-2:hover{
+    background-color: white;
+}
+
+.info_usuario--cursos-frame-inicial-enlace-2{
+    color: white;
+}
+
+.info_usuario--cursos-frame-inicial-enlace-2:hover{
+    color: rgba(31, 127, 185,0.9);
+}
+
+.info_usuario--cursos-frame-inicial-1{
+    width: 100px;
+}
+
+.info_usuario--cursos-frame-inicial-enlace-1,
+.info_usuario--cursos-frame-inicial-enlace-2{
+    margin: auto;
+}
+
+.info_usuario--cursos-flex-container-rutas,
+.info_usuario--cursos-flex-container,
+.info_usuario--cursos-3-flex-container,
+.info_usuario--cursos-logros-flex-container{
+    margin-top: 20px;
+}
+
+.info_usuario--cursos-enlace-ruta{
+    margin-left: 600px;
+    border-radius: 2px;
+}
+
+.info_usuario--cursos-enlace{
+    margin-left: 825px;
+}
+
+.info_usuario--cursos-logros-enlace{
+    margin-left: 920px;
+}
+
+.info_usuario--cursos-algebra-ruta,
+.info_usuario--cursos-geometria-ruta,
+.info_usuario--cursos-aritmetica-ruta,
+.info_usuario--cursos-fisica-ruta{
+    display: flex;
+    width: 50%;
+    background: white;
+    box-shadow: 1px 1px 1px 1px grey;
+    border-radius: 5px;
+    border-left: solid 6px red;
+}
+
+.info_usuario--cursos-geometria-ruta{
+    border-left: solid 6px 	#FF4500;
+}
+
+.info_usuario--cursos-aritmetica-ruta{
+    border-left: solid 6px #48D1CC;
+}
+
+.info_usuario--cursos-fisica-ruta{
+    border-left: solid 6px #708090;
+}
+
+.info_usuario--cursos-geometria-ruta,
+.info_usuario--cursos-fisica-ruta{
+    margin-left: 20px;
+}
+
+.info_usuario--cursos-aritmetica-ruta,
+.info_usuario--cursos-fisica-ruta{
+    margin-top: 30px;
+}
+
+.info_usuario--cursos-alg,
+.info_usuario--cursos-geom,
+.info_usuario--cursos-arit,
+.info_usuario--cursos-fis{
+    margin-left: 5%;
+    text-align: center;
+}
+
+.info_usuario--cursos-enlace-resumen-alg,
+.info_usuario--cursos-enlace-resumen-geom{
+    margin-left: 300px;
+}
+
+.info_usuario--cursos-enlace-resumen-arit{
+    margin-left: 280px;
+}
+
+.info_usuario--cursos-enlace-resumen-fis{
+    margin-left: 340px;
+}
+
+
+.info_usuario--cursos-cuadro-trigo,
+.info_usuario--cursos-cuadro-geof,
+.info_usuario--cursos-cuadro-biolo,
+.info_usuario--cursos-cuadro-histo{
+    height: 150px;
+    width: 25%;
+    background-color: rgba(218, 251, 239);
+}
+
+.info_usuario--cursos-cuadro-quim,
+.info_usuario--cursos-cuadro-art,
+.info_usuario--cursos-cuadro-leng,
+.info_usuario--cursos-cuadro-lite{
+    height: 150px;
+    width: 25%;
+    background-color: rgba(212, 175, 55,0.8);
+}
+
+.info_usuario--cursos-cuadro-geof,
+.info_usuario--cursos-cuadro-biolo,
+.info_usuario--cursos-cuadro-histo{
+    margin-left: 20px;
+}
+
+.info_usuario--cursos-cuadro-art,
+.info_usuario--cursos-cuadro-leng,
+.info_usuario--cursos-cuadro-lite{
+    margin-left: 20px;
+}
+
+.info_usuario--cursos-cuadro-geof{
+    background-color: rgb(253, 250, 158);
+}
+
+.info_usuario--cursos-cuadro-biolo{
+    background-color: rgb(187, 255, 155);
+}
+
+.info_usuario--cursos-cuadro-histo{
+    background-color: rgb(255, 163, 162);
+}
+
+.info_usuario--cursos-cuadro-art{
+    background-color: rgb(254, 148, 209);
+}
+
+.info_usuario--cursos-cuadro-leng{
+    background-color: rgb(104, 196, 255);
+}
+
+.info_usuario--cursos-cuadro-lite{
+    background-color: rgb(221, 136, 255);
+}
+
+.info_usuario--cursos-enlace-final{
+    width: 100%;
+    height: 44.5px;
+    background-color: white;
+}
+
+.info_usuario--cursos-texto-enlace-final{
+    margin-top: 10px;
+}
+
+.info_usuario--cursos-1,
+.info_usuario--cursos-2,
+.info_usuario--cursos-3,
+.info_usuario--cursos-4,
+.info_usuario--cursos-5,
+.info_usuario--cursos-6,
+.info_usuario--cursos-7,
+.info_usuario--cursos-8{
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+.info_usuario--cursos-logros-cuadro-1,
+.info_usuario--cursos-logros-cuadro-2{
+    width: 50%;
+    height: 220px;
+    background-color: rgb(45, 106, 246);
+}
+
+.info_usuario--cursos-logros-cuadro-2{
+    background-color: rgb(72, 170, 229);
+    margin-left: 20px;
+}
+
+.info_usuario--cursos-logros-titulo{
+    margin-top: 10px;
+    color: white;
+}
+
+.info_usuario--cursos-logros-fecha{
+    color: rgb(228, 240, 247);
+}
+
+.info_usuario--cursos-logros-titulo,
+.info_usuario--cursos-logros-fecha,
+.info_usuario--cursos-logros-img,
+.info_usuario--cursos-logros-titulo-curso,
+.info_usuario--cursos-logro-descripcion-curso,
+.info_usuario--cursos-logros-icono{
+    margin-left: 50px;
+}
+
+.info_usuario--cursos-logros-titulo-curso{
+    margin-top: 130px;
+    color: white;
+}
+
+.info_usuario--cursos-logro-descripcion-curso{
+    margin-top: 5px;
+    color: rgb(228, 240, 247);
+}
