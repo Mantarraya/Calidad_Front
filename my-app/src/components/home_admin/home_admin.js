@@ -1,6 +1,5 @@
 import React,{ Component } from "react";
 
-
 class HomeAdmin extends Component{
     
     render(){
@@ -14,4 +13,4 @@ class HomeAdmin extends Component{
     }
 }
 
-export default withRouter(HomeAdmin);
+export default HomeAdmin;
