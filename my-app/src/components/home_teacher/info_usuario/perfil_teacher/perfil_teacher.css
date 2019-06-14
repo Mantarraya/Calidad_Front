@@ -1,0 +1,157 @@
+
+.info_usuario-home-teacher
+{
+    display: flex;
+}
+
+.info_usuario-home_teacher--cont-chat
+{
+    display: flex;
+    height: 120px;
+    width: 100%;
+    border: 1px solid grey;
+    background-color: rgb(247, 247, 247);
+}
+
+.info_usuario-home_teacher--cont-img
+{
+    height: 50px;
+    width: 64px;
+    margin: auto;
+    background-image: url(https://ptetutorials.com/images/user-profile.png);
+    background-size: cover;
+    margin-left: 10px;
+}
+
+.info_usuario-home_teacher--cont-chat-user
+{
+    display: flex;
+}
+
+.info_usuario-home_teacher--cont-chat-fecha
+{
+    margin-left: 240px;
+}
+
+.info_usuario-home_teacher--cont-chat-info
+{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.info_usuario-home_teacher--cont-chat-user-name
+{
+    font-weight: bold;
+    color: rgb(72, 69, 73);
+}
+
+.info_usuario-home_teacher--cont-chat-msg
+{
+    font-size: 14px;
+    color: grey;
+}
+
+.info_usuario-home_teacher-hijo_2
+{
+    width: 70%;
+    height: 360px;
+    border: solid 1px gray;
+    margin-left: 0;
+    background-color: white;
+}
+
+.info_usuario-home_teacher--cont-img-1
+{
+    height: 40px;
+    width: 40px;
+    margin: auto;
+    background-image: url(https://ptetutorials.com/images/user-profile.png);
+    background-size: cover;
+    margin-left: 10px;
+}
+
+.info_usuario-home_teacher-conversation-1
+{
+    display: flex;
+    float: left;
+    margin-top: 15px;
+}
+
+.info_usuario-home_teacher--cont-conversation-1
+{
+    width: 300px;
+    height: 45px;
+    background-color: rgb(238, 238, 238);
+    margin-left: 10px;
+}
+
+.info_usuario-home_teacher--cont-conversation-msg-1
+{
+    font-size: 13px;
+    color: grey;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.info_usuario-home_teacher--cont-conversation-msg-date
+{
+    font-size: 11px;
+    margin-top: -10px;
+    color: grey;
+    font-weight: bold;
+}
+
+.info_usuario-home_teacher-conversation-2
+{
+    display: block;
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+}
+
+.info_usuario-home_teacher--cont-conversation-2
+{
+    width: 300px;
+    height: 45px;
+    background-color: rgb(48, 192, 255);
+    margin-left: 10px;
+}
+
+.info_usuario-home_teacher--cont-conversation-msg-2
+{
+    font-size: 13px;
+    color: white;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.info_usuario-home_teacher--content-input
+{
+    margin-top: 320px;
+    margin-left: 15px;
+}
+
+.info_usuario-home_teacher--input
+{
+    width: 75%;
+    border-radius: 10px;
+}
+
+.info_usuario-home_teacher--btn_enviar
+{
+    margin-left: 15px;
+    color:  rgb(48, 192, 255);
+}
+.info_usuario-home_teacher--btn_enviar:hover
+{
+    cursor: pointer;
+}
+
+.btn-ver-pago
+{
+    width: 80px;
+    height: 30px;
+    margin-left: 25px;
+    font-size: 11px;
+}

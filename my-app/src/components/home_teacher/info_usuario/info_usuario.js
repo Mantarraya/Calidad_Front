@@ -2,8 +2,8 @@ import React from "react";
 import './info_usuario.css';
 import logo from './estudiante.svg';
 
-import PrincipalUser from "./principal_user/principal_user";
-import Perfil from './perfil_user/perfil_user';
+import PrincipalTeacher from "./principal_teacher/principal_teacher";
+import Perfil from './perfil_teacher/perfil_teacher';
 import Cursos from './cursos/cursos'
 import EditarDatosUser from './editar_datos_user/editar_datos_user'
 
@@ -31,7 +31,7 @@ class InfoUsuario extends React.Component{
         const numOpcion=props.numOpcion;
         switch (numOpcion){
             case 0:{
-                return <PrincipalUser/>;
+                return <PrincipalTeacher/>;
             }
             case 1:{
                 return <Perfil/>
@@ -149,7 +149,7 @@ class InfoUsuario extends React.Component{
                         </div>
                         <div className="col-6">
                             <div className="info_usuario--header_btn_editar" onClick={this.editarDatosUsuario}>
-                                    Editar datos
+                                    Editar Perfil
                             </div>
                         </div>
                     </div>
@@ -157,9 +157,9 @@ class InfoUsuario extends React.Component{
                     <hr/>
 
                     <ul className="info_usuario--header_enlaces">
-                        <li id="info_usuario--header_enlaces_principal" onClick={this.cargarPrincipal}>Principal</li>
-                        <li id="info_usuario--header_enlaces_perfil" onClick={this.cargarPerfil}>Perfil</li>
-                        <li id="info_usuario--header_enlaces_cursos" onClick={this.cargarCursos}>Cursos</li>
+                        <li id="info_usuario--header_enlaces_principal" onClick={this.cargarPrincipal}>Notificaciones</li>
+                        <li id="info_usuario--header_enlaces_perfil" onClick={this.cargarPerfil}>Mensajes</li>
+                        <li id="info_usuario--header_enlaces_cursos" onClick={this.cargarCursos}>Alumnos Reportados</li>
                     </ul>
                 </div>
 
