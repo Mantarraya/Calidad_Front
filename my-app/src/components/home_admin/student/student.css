@@ -1,0 +1,17 @@
+.alumno--contenido{
+    padding-left: 20%;
+    padding-top: 35px;
+}
+
+.alumno--hr{
+    border: none;
+    height: 2px;
+    margin-right: 5%;
+    background: #ccc;
+ }
+
+
+ .alumno--tabla{
+     background: white;
+     width: 95%;
+ }

@@ -1,0 +1,30 @@
+.reportar_usuario--contenido{
+    padding-left: 20%;
+    padding-top: 35px;
+}
+
+.reportar_usuario--hr{
+    border: none;
+    height: 2px;
+    margin-right: 5%;
+    background: #ccc;
+ }
+.reportar_usuario--tabla{
+    position: absolute;
+    width: 158%;
+    
+}
+.reportar_usuario--custab{
+    background: rgb(218, 246, 248);
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 5% 0;
+    box-shadow: 3px 3px 2px #ccc;
+    transition: 0.5s;
+    }
+.reportar_usuario--custab:hover{
+    box-shadow: 3px 3px 0px transparent;
+    transition: 0.5s;
+}
+
+    
