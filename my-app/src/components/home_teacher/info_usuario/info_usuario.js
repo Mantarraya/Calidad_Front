@@ -4,7 +4,7 @@ import logo from './estudiante.svg';
 
 import PrincipalTeacher from "./principal_teacher/principal_teacher";
 import Perfil from './perfil_teacher/perfil_teacher';
-import Cursos from './cursos/cursos'
+import AlumnosReportados from './alumnos_reportados/alumnos_reportados'
 import EditarDatosUser from './editar_datos_user/editar_datos_user'
 
 class InfoUsuario extends React.Component{
@@ -22,7 +22,7 @@ class InfoUsuario extends React.Component{
 
 
         this.cargarPrincipal = this.cargarPrincipal.bind(this)
-        this.cargarCursos = this.cargarCursos.bind(this)
+        this.cargarAlumReportados = this.cargarAlumReportados.bind(this)
         this.cargarPerfil=this.cargarPerfil.bind(this)
         this.editarDatosUsuario=this.editarDatosUsuario.bind(this)
     }
@@ -37,7 +37,7 @@ class InfoUsuario extends React.Component{
                 return <Perfil/>
             }
             case 2:{
-                return <Cursos/>;
+                return <AlumnosReportados/>;
             }
             case 3:{
                 return <EditarDatosUser/>;
@@ -57,22 +57,22 @@ class InfoUsuario extends React.Component{
 
         const enlace_principal = document.getElementById("info_usuario--header_enlaces_principal");
         const enlace_perfil = document.getElementById("info_usuario--header_enlaces_perfil");
-        const enlace_cursos = document.getElementById("info_usuario--header_enlaces_cursos");
+        const enlace_alumn_reportados = document.getElementById("info_usuario--header_enlaces_cursos");
 
         enlace_principal.onclick=()=>{
             enlace_principal.style.borderBottom="3px solid white";
             enlace_perfil.style.borderBottom="3px solid transparent";
-            enlace_cursos.style.borderBottom="3px solid transparent";
+            enlace_alumn_reportados.style.borderBottom="3px solid transparent";
         }
         enlace_perfil.onclick=()=>{
             enlace_principal.style.borderBottom="3px solid transparent";
             enlace_perfil.style.borderBottom="3px solid white";
-            enlace_cursos.style.borderBottom="3px solid transparent";
+            enlace_alumn_reportados.style.borderBottom="3px solid transparent";
         }
-        enlace_cursos.onclick=()=>{
+        enlace_alumn_reportados.onclick=()=>{
             enlace_principal.style.borderBottom="3px solid transparent";
             enlace_perfil.style.borderBottom="3px solid transparent";
-            enlace_cursos.style.borderBottom="3px solid white";
+            enlace_alumn_reportados.style.borderBottom="3px solid white";
         }
 
         fetch("https://back-calidad.herokuapp.com/api/alumno/"+localStorage.getItem('mytoken'))
@@ -117,7 +117,7 @@ class InfoUsuario extends React.Component{
         e.preventDefault();
     }
     
-    cargarCursos(e){
+    cargarAlumReportados(e){
         e.preventDefault();
         this.setState({
             valor:2
@@ -159,7 +159,7 @@ class InfoUsuario extends React.Component{
                     <ul className="info_usuario--header_enlaces">
                         <li id="info_usuario--header_enlaces_principal" onClick={this.cargarPrincipal}>Notificaciones</li>
                         <li id="info_usuario--header_enlaces_perfil" onClick={this.cargarPerfil}>Mensajes</li>
-                        <li id="info_usuario--header_enlaces_cursos" onClick={this.cargarCursos}>Alumnos Reportados</li>
+                        <li id="info_usuario--header_enlaces_cursos" onClick={this.cargarAlumReportados}>Alumnos Reportados</li>
                     </ul>
                 </div>
 

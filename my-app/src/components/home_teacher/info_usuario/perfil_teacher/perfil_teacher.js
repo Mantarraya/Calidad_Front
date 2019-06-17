@@ -19,9 +19,7 @@ export default class PerfilTeacher extends React.Component {
                 <div className="info_usuario-home-teacher">
                     <div className="info_usuario-home_teacher-hijo_1">
                         <div className="info_usuario-home_teacher--cont-chat">
-                            <div className="info_usuario-home_teacher--cont-img">
-                                
-                            </div>
+                            <div className="info_usuario-home_teacher--cont-img"></div>
                             <div className="info_usuario-home_teacher--cont-chat-info">
                                 <div className="info_usuario-home_teacher--cont-chat-user">
                                     <h5 className="info_usuario-home_teacher--cont-chat-user-name">Alumno_1</h5>
@@ -31,12 +29,20 @@ export default class PerfilTeacher extends React.Component {
                             </div>
                         </div>
                         <div className="info_usuario-home_teacher--cont-chat">
-                            <div className="info_usuario-home_teacher--cont-img">
-                                
-                            </div>
+                            <div className="info_usuario-home_teacher--cont-img"></div>
                             <div className="info_usuario-home_teacher--cont-chat-info">
                                 <div className="info_usuario-home_teacher--cont-chat-user">
                                     <h5 className="info_usuario-home_teacher--cont-chat-user-name">Alumno_2</h5>
+                                    <span className="info_usuario-home_teacher--cont-chat-fecha">9 Jun</span>
+                                </div>
+                                <p className="info_usuario-home_teacher--cont-chat-msg">Buenas noches profesor, le escribo porque estoy interesado en que me dicte clases.</p>
+                            </div>
+                        </div>
+                        <div className="info_usuario-home_teacher--cont-chat">
+                            <div className="info_usuario-home_teacher--cont-img"></div>
+                            <div className="info_usuario-home_teacher--cont-chat-info">
+                                <div className="info_usuario-home_teacher--cont-chat-user">
+                                    <h5 className="info_usuario-home_teacher--cont-chat-user-name">Alumno_3</h5>
                                     <span className="info_usuario-home_teacher--cont-chat-fecha">9 Jun</span>
                                 </div>
                                 <p className="info_usuario-home_teacher--cont-chat-msg">Buenas noches profesor, le escribo porque estoy interesado en que me dicte clases.</p>
@@ -48,8 +54,8 @@ export default class PerfilTeacher extends React.Component {
                             </div>
                             <div className="info_usuario-home_teacher--cont-chat-info">
                                 <div className="info_usuario-home_teacher--cont-chat-user">
-                                    <h5 className="info_usuario-home_teacher--cont-chat-user-name">Alumno_3</h5>
-                                    <span className="info_usuario-home_teacher--cont-chat-fecha">9 Jun</span>
+                                    <h5 className="info_usuario-home_teacher--cont-chat-user-name">Alumno_4</h5>
+                                    <span className="info_usuario-home_teacher--cont-chat-fecha">15 Jun</span>
                                 </div>
                                 <p className="info_usuario-home_teacher--cont-chat-msg">Buenas noches profesor, le escribo porque estoy interesado en que me dicte clases.</p>
                             </div>

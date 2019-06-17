@@ -4,6 +4,12 @@
     display: flex;
 }
 
+.info_usuario-home_teacher-hijo_1
+{
+    height: 360px;
+    overflow: auto;
+}
+
 .info_usuario-home_teacher--cont-chat
 {
     display: flex;
@@ -58,6 +64,7 @@
     border: solid 1px gray;
     margin-left: 0;
     background-color: white;
+    overflow: auto;
 }
 
 .info_usuario-home_teacher--cont-img-1
