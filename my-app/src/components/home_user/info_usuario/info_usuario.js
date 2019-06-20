@@ -4,8 +4,9 @@ import logo from './estudiante.svg';
 
 import PrincipalUser from "./principal_user/principal_user";
 import Perfil from './perfil_user/perfil_user';
-import Cursos from './cursos/cursos'
-import EditarDatosUser from './editar_datos_user/editar_datos_user'
+import Cursos from './cursos/cursos';
+import EditarDatosUser from './editar_datos_user/editar_datos_user';
+import Mensajes from './mensajes_chat/mensajes';
 
 class InfoUsuario extends React.Component{
 
@@ -25,6 +26,7 @@ class InfoUsuario extends React.Component{
         this.cargarCursos = this.cargarCursos.bind(this)
         this.cargarPerfil=this.cargarPerfil.bind(this)
         this.editarDatosUsuario=this.editarDatosUsuario.bind(this)
+        this.mensajesChat=this.mensajesChat.bind(this)
     }
 
     CompHome(props){
@@ -42,6 +44,9 @@ class InfoUsuario extends React.Component{
             case 3:{
                 return <EditarDatosUser/>;
             }
+            case 4:{
+                return <Mensajes/>;
+            }
             default:{
                 return <h1>Error</h1>
             }
@@ -58,21 +63,32 @@ class InfoUsuario extends React.Component{
         const enlace_principal = document.getElementById("info_usuario--header_enlaces_principal");
         const enlace_perfil = document.getElementById("info_usuario--header_enlaces_perfil");
         const enlace_cursos = document.getElementById("info_usuario--header_enlaces_cursos");
+        const enlace_mensajes = document.getElementById("info_usuario--header_enlaces_mensajes");
 
         enlace_principal.onclick=()=>{
             enlace_principal.style.borderBottom="3px solid white";
             enlace_perfil.style.borderBottom="3px solid transparent";
             enlace_cursos.style.borderBottom="3px solid transparent";
+            enlace_mensajes.style.borderBottom="3px solid transparent";
         }
         enlace_perfil.onclick=()=>{
             enlace_principal.style.borderBottom="3px solid transparent";
             enlace_perfil.style.borderBottom="3px solid white";
             enlace_cursos.style.borderBottom="3px solid transparent";
+            enlace_mensajes.style.borderBottom="3px solid transparent";
         }
         enlace_cursos.onclick=()=>{
             enlace_principal.style.borderBottom="3px solid transparent";
             enlace_perfil.style.borderBottom="3px solid transparent";
             enlace_cursos.style.borderBottom="3px solid white";
+            enlace_mensajes.style.borderBottom="3px solid transparent";
+        }
+
+        enlace_mensajes.onclick=()=>{
+            enlace_principal.style.borderBottom="3px solid transparent";
+            enlace_perfil.style.borderBottom="3px solid transparent";
+            enlace_cursos.style.borderBottom="3px solid transparent";
+            enlace_mensajes.style.borderBottom="3px solid white";
         }
 
         fetch("https://back-calidad.herokuapp.com/api/alumno/"+localStorage.getItem('mytoken'))
@@ -133,6 +149,14 @@ class InfoUsuario extends React.Component{
         e.preventDefault();
     }
 
+    mensajesChat(e){
+        e.preventDefault();
+        this.setState({
+            valor:4
+        })
+        e.preventDefault();
+    }
+
     render(){
         return(
             <div>
@@ -160,6 +184,7 @@ class InfoUsuario extends React.Component{
                         <li id="info_usuario--header_enlaces_principal" onClick={this.cargarPrincipal}>Principal</li>
                         <li id="info_usuario--header_enlaces_perfil" onClick={this.cargarPerfil}>Perfil</li>
                         <li id="info_usuario--header_enlaces_cursos" onClick={this.cargarCursos}>Cursos</li>
+                        <li id="info_usuario--header_enlaces_mensajes" onClick={this.mensajesChat}>Mensajes</li>
                     </ul>
                 </div>
 

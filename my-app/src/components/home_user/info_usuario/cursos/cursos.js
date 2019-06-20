@@ -9,11 +9,12 @@ export default class Cursos extends React.Component{
         this.state={
             lista_cursos:[]
         }
-    }
 
+    }
 
     componentDidMount(){
         const that = this;
+
         fetch('https://back-calidad.herokuapp.com/api/curso/obtenerCursos')
         .then((res)=>res.json())
         .then((data)=>{
@@ -51,36 +52,58 @@ export default class Cursos extends React.Component{
                 </div>
                 <div>
                     <div className="info_usuario--cursos-flex-container"> 
-                        <h4>Ruta de Aprendizaje</h4>
+                        <h4>Orden de Aprendizaje</h4>
                         <p className="info_usuario--cursos-enlace-ruta">Todos mis caminos de aprendizaje</p>
                     </div>
-                    <div className="info_usuario--cursos-flex-container-rutas">
-                        <div className="info_usuario--cursos-algebra-ruta">
-                            <img src="http://tutorio-bootstrap.frontendmatter.com/assets/images/paths/angular_40x40.svg" alt="curso-0"></img>
-                            <p className="info_usuario--cursos-alg"><b>{this.state.lista_cursos[1]==null?"":this.state.lista_cursos[1].nombre}</b></p>
-                            <p className="info_usuario--cursos-enlace-resumen-alg">Resumen</p>
+                    <div className="info_usuario--cursos-ruta-container">
+                        <div className="card border-primary mb-3 info_usuario--cursos-ruta-desc-1">
+                            <div className="card-header info_usuario--cursos-ruta-desc-title">Descripción <i class="fas fa-brain"></i></div>
+                            <div className="card-body text-primary">
+                                <h5 className="card-title"><i class="fas fa-list-ol"></i> Sigue el Orden</h5>
+                                <p className="card-text info_usuario--cursos-ruta-body">En FazTeach te ayudamos si no sabes como empezar a prepararte. <br></br> En el área de ciencias y matemáticas
+                                es importante que vayas paso a paso para que tu aprendizaje sea el adecuado. <br></br> Te planteamos este orden para ayudarte a estudiar de manera eficiente
+                                y eficaz para que logres todos tus objetivos académicos.</p>
+                            </div>
                         </div>
-                        <div className="info_usuario--cursos-geometria-ruta">
-                            <img src="http://tutorio-bootstrap.frontendmatter.com/assets/images/paths/angular_40x40.svg" alt="curso-2"></img>
-                            <p className="info_usuario--cursos-geom"><b>{this.state.lista_cursos[0]==null?"":this.state.lista_cursos[0].nombre}</b></p>
-                            <p className="info_usuario--cursos-enlace-resumen-geom">Resumen</p>
+                        <div className="card border-primary mb-3 info_usuario--cursos-ruta-desc-2">
+                            <div className="card-header info_usuario--cursos-ruta-desc-title">¿Porqué este orden? <i class="far fa-question-circle"></i></div>
+                            <div className="card-body text-primary">
+                                <h5 className="card-title"><i class="fas fa-check-circle"></i> Experiencia de Calidad</h5>
+                                <p className="card-text info_usuario--cursos-ruta-body">El orden que FazTeach ha establecido es el resultado de una recopilación de opiniones de alumnos de las diversas academias y universidades de Lima.
+                                <br></br>También nos basamos en análisis de exámenes de admisión y primeros ciclos de universidad. <br></br>
+                                Confiamos en que si se sigue esta ruta de aprendizaje se obtendrán resultados exitosos.</p>
+                            </div>
                         </div>
                     </div>
-                    <div className="info_usuario--cursos-flex-container">
-                        <div className="info_usuario--cursos-aritmetica-ruta">
-                            <img src="http://tutorio-bootstrap.frontendmatter.com/assets/images/paths/angular_40x40.svg" alt="curso-1"></img>
-                            <p className="info_usuario--cursos-arit"><b>{this.state.lista_cursos[2]==null?"":this.state.lista_cursos[2].nombre}</b></p>
-                            <p className="info_usuario--cursos-enlace-resumen-arit">Resumen</p>
+                    <div>
+                        <div className="info_usuario--cursos-flex-container-rutas">
+                            <div className="info_usuario--cursos-aritmetica-ruta">
+                                <div class="info_usuario--cursos-editar_circle-arit">1</div>
+                                <p className="info_usuario--cursos-arit"><b>{this.state.lista_cursos[9]==null?"":this.state.lista_cursos[9].nombre}</b></p>
+                                <p className="info_usuario--cursos-enlace-resumen-arit">Ver curso</p>
+                            </div>
+                            <div className="info_usuario--cursos-algebra-ruta">
+                                <div class="info_usuario--cursos-editar_circle-alg">2</div>
+                                <p className="info_usuario--cursos-alg"><b>{this.state.lista_cursos[8]==null?"":this.state.lista_cursos[8].nombre}</b></p>
+                                <p className="info_usuario--cursos-enlace-resumen-alg">Ver curso</p>
+                            </div>
                         </div>
-                        <div className="info_usuario--cursos-fisica-ruta">
-                            <img src="http://tutorio-bootstrap.frontendmatter.com/assets/images/paths/angular_40x40.svg" alt="curso-4"></img>
-                            <p className="info_usuario--cursos-fis"><b>{this.state.lista_cursos[4]==null?"":this.state.lista_cursos[4].nombre}</b></p>
-                            <p className="info_usuario--cursos-enlace-resumen-fis">Resumen</p>
+                        <div className="info_usuario--cursos-flex-container-rutas">
+                            <div className="info_usuario--cursos-geometria-ruta">
+                                <div class="info_usuario--cursos-editar_circle-geom">3</div>
+                                <p className="info_usuario--cursos-geom"><b>{this.state.lista_cursos[0]==null?"":this.state.lista_cursos[0].nombre}</b></p>
+                                <p className="info_usuario--cursos-enlace-resumen-geom">Ver curso</p>
+                            </div>
+                            <div className="info_usuario--cursos-fisica-ruta">
+                                <div class="info_usuario--cursos-editar_circle-fis">4</div>
+                                <p className="info_usuario--cursos-fis"><b>{this.state.lista_cursos[2]==null?"":this.state.lista_cursos[2].nombre}</b></p>
+                                <p className="info_usuario--cursos-enlace-resumen-fis">Ver curso</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div className="info_usuario--cursos-flex-container">
+                    <div className="info_usuario--cursos-flex-container-cursos">
                         <h4>Los Cursos</h4>
                         <p className="info_usuario--cursos-enlace">Todos mis cursos</p>
                     </div>
@@ -122,7 +145,7 @@ export default class Cursos extends React.Component{
                     </div>
                 </div>
                 <div>
-                    <div className="info_usuario--cursos-logros-flex-container">
+                    <div className="info_usuario--cursos-logros-flex-container-encabezado">
                         <h4>Logros</h4>
                         <p className="info_usuario--cursos-logros-enlace">Mis logros</p>
                     </div>
@@ -144,7 +167,7 @@ export default class Cursos extends React.Component{
                             </div>
                         </div>
                         <div className="card info_usuario--cursos-logros-cuadro-2">
-                        <div className="info_usuario--cursos-logros-cuadro-flex">
+                            <div className="info_usuario--cursos-logros-cuadro-flex">
                                 <div>
                                     <h5 className="info_usuario--cursos-logros-titulo">Reto</h5>
                                     <p className="info_usuario--cursos-logros-fecha">24 Junio, 2019</p>
@@ -160,7 +183,7 @@ export default class Cursos extends React.Component{
                             </div>
                         </div> 
                     </div>
-                </div>
+                </div>  
             </div>
         )
     }

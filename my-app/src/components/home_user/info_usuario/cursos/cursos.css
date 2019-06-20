@@ -11,12 +11,82 @@
     margin-bottom: 50px;
 }
 
+/* Inicio de Ruta */
+
+.info_usuario--cursos-ruta-container
+{
+    display: flex;
+    margin-top: 20px;
+    margin-top: 3px;
+}
+
+.info_usuario--cursos-ruta-desc-title
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: #48D1CC;
+}
+
+.info_usuario--cursos-ruta-body
+{
+    font-size: 14px;
+}
+
+.info_usuario--cursos-ruta-desc-1,
+.info_usuario--cursos-ruta-desc-2
+{
+    max-width: 18 rem;
+    width: 50%;
+}
+
+.info_usuario--cursos-ruta-desc-2
+{
+    margin-left: 20px;
+}
+/* Fin de Ruta */
+
+/* Circle */
+.info_usuario--cursos-editar_circle-arit,
+.info_usuario--cursos-editar_circle-alg,
+.info_usuario--cursos-editar_circle-geom,
+.info_usuario--cursos-editar_circle-fis
+{
+    background: red;
+    position: relative;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    border-radius: 100%;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 0 3px #fff;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.info_usuario--cursos-editar_circle-alg
+{
+    background: #FF4500;
+}
+
+.info_usuario--cursos-editar_circle-geom
+{
+    background: #48D1CC;
+}
+
+.info_usuario--cursos-editar_circle-fis
+{
+    background: #708090;
+}
+/* Fin Circle */
+
 .info_usuario--cursos-flex-container,
 .info_usuario--cursos-flex-container-rutas,
-.info_usuario--cursos-flex-container,
+.info_usuario--cursos-flex-container-cursos,
 .info_usuario--cursos-2-flex-container,
 .info_usuario--cursos-3-flex-container,
 .info_usuario--cursos-logros-flex-container,
+.info_usuario--cursos-logros-flex-container-encabezado,
 .info_usuario--cursos-logros-cuadro-flex{
     display: flex;
 }
@@ -83,21 +153,37 @@
 .info_usuario--cursos-flex-container-rutas,
 .info_usuario--cursos-flex-container,
 .info_usuario--cursos-3-flex-container,
-.info_usuario--cursos-logros-flex-container{
+.info_usuario--cursos-logros-flex-container,
+.info_usuario--cursos-logros-flex-container-encabezado{
     margin-top: 20px;
 }
 
+.info_usuario--cursos-logros-flex-container-encabezado
+{
+    margin-top: 50px;
+}
+
+.info_usuario--cursos-logros-flex-container
+{
+    margin-top: -2px;
+}
 .info_usuario--cursos-enlace-ruta{
     margin-left: 600px;
     border-radius: 2px;
 }
 
 .info_usuario--cursos-enlace{
-    margin-left: 825px;
+    margin-left: 850px;
+}
+
+.info_usuario--cursos-flex-container-cursos
+{
+    margin-top: 40px;
 }
 
 .info_usuario--cursos-logros-enlace{
     margin-left: 920px;
+
 }
 
 .info_usuario--cursos-algebra-ruta,
@@ -105,18 +191,19 @@
 .info_usuario--cursos-aritmetica-ruta,
 .info_usuario--cursos-fisica-ruta{
     display: flex;
-    width: 50%;
+    width: 49%;
+    height: 43px;
     background: white;
     box-shadow: 1px 1px 1px 1px grey;
     border-radius: 5px;
     border-left: solid 6px red;
 }
 
-.info_usuario--cursos-geometria-ruta{
+.info_usuario--cursos-algebra-ruta{
     border-left: solid 6px 	#FF4500;
 }
 
-.info_usuario--cursos-aritmetica-ruta{
+.info_usuario--cursos-geometria-ruta{
     border-left: solid 6px #48D1CC;
 }
 
@@ -124,15 +211,28 @@
     border-left: solid 6px #708090;
 }
 
-.info_usuario--cursos-geometria-ruta,
+.info_usuario--cursos-algebra-ruta,
 .info_usuario--cursos-fisica-ruta{
     margin-left: 20px;
 }
 
-.info_usuario--cursos-aritmetica-ruta,
+.info_usuario--cursos-geometria-ruta,
 .info_usuario--cursos-fisica-ruta{
     margin-top: 30px;
 }
+
+.info_usuario--editar_circle,
+.info_usuario--cursos-arit,
+.info_usuario--cursos-enlace-resumen-arit,
+.info_usuario--cursos-alg,
+.info_usuario--cursos-enlace-resumen-alg,
+.info_usuario--cursos-geom,
+.info_usuario--cursos-enlace-resumen-geom,
+.info_usuario--cursos-fis,
+.info_usuario--cursos-enlace-resumen-fis{
+    margin-top: 10px;
+}
+
 
 .info_usuario--cursos-alg,
 .info_usuario--cursos-geom,
@@ -142,17 +242,17 @@
     text-align: center;
 }
 
-.info_usuario--cursos-enlace-resumen-alg,
+.info_usuario--cursos-enlace-resumen-arit,
 .info_usuario--cursos-enlace-resumen-geom{
     margin-left: 300px;
 }
 
-.info_usuario--cursos-enlace-resumen-arit{
-    margin-left: 280px;
+.info_usuario--cursos-enlace-resumen-alg{
+    margin-left: 325px;
 }
 
 .info_usuario--cursos-enlace-resumen-fis{
-    margin-left: 340px;
+    margin-left: 339px;
 }
 
 
