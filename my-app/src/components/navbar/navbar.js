@@ -35,7 +35,7 @@ class NavBar extends React.Component{
         var parent = this;  
         e.preventDefault();
 
-        fetch("https://back-calidad.herokuapp.com/api/login-alumno",{
+        fetch("https://api-calida.herokuapp.com/api/login-alumno",{
             method:'POST',
             headers:{
                 'Accept': 'application/json, text/plain, */*',
@@ -88,7 +88,7 @@ class NavBar extends React.Component{
                             </li>
                         </ul>
                         <form className="form-inline my-2 my-lg-0">
-                            <input className="form-control mr-sm-2" type="email" placeholder="Email" value={this.state.email} onChange={this.obtenerEmail}/>
+                            <input className="form-control mr-sm-2" type="email" placeholder="Correo" value={this.state.email} onChange={this.obtenerEmail}/>
                             <input className="form-control  mr-sm-2" type="password" name="" placeholder="Contraseña" value={this.state.pass} onChange={this.obtnerPassword}/>
                             <button className="btn btn-outline-success my-2 my-sm-0" type="submit" onClick={this.iniciarSesion}>Entrar</button>
                         </form>

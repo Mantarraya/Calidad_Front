@@ -15,7 +15,7 @@ export default class ModalUser extends React.Component{
 
     componentDidMount(){
         const that = this;
-        fetch('https://back-calidad.herokuapp.com/api/curso/obtenerCursos')
+        fetch('https://api-calida.herokuapp.com/api/curso/obtenerCursos')
         .then((res)=>res.json())
         .then((data)=>{
 

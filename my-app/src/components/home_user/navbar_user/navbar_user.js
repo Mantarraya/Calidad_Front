@@ -31,19 +31,19 @@ class NavBarUser extends React.Component{
 
     render(){
         return(
-            <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                 <Link className="navbar-brand" to="/home_user">TechFazt</Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <div className="collapse navbar-collapse navbar-opciones" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
                     <li className="nav-item active">
-                        <div className="nav-link" id="navbar_user--curso">Cursos<span className="sr-only">(current)</span></div>
+                        <div className="nav-link" id="navbar_user--curso"><button type="button" class="btn btn-primary"><i class="fas fa-book"></i> Cursos</button><span className="sr-only">(current)</span></div>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/login" onClick={this.btnCerrarSesion}>Cerrar Sesion</Link>
+                        <Link className="nav-link" to="/login" onClick={this.btnCerrarSesion}><button type="button" class="btn btn-danger"><i class="fas fa-power-off"></i> Salir</button></Link>
                     </li>
                     </ul>
                 </div>

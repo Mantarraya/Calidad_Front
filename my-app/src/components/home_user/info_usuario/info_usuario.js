@@ -91,7 +91,7 @@ class InfoUsuario extends React.Component{
             enlace_mensajes.style.borderBottom="3px solid white";
         }
 
-        fetch("https://back-calidad.herokuapp.com/api/alumno/"+localStorage.getItem('mytoken'))
+        fetch("https://api-calida.herokuapp.com/api/alumno/"+localStorage.getItem('mytoken'))
         .then(function (response){ 
             return response.json();
         })

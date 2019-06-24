@@ -35,4 +35,25 @@
     margin-top:20px;
 }
 
+.login--escoje-rol,
+.login--escoje-genero
+{
+    display: flex;
+}
 
+.login--title-escoje-rol,
+.login--title-escoje-genero
+{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.login--escoje-genero-container
+{
+    margin-top: 10px;
+}
+
+.login--register-btn
+{
+    margin-top: 10px;
+}

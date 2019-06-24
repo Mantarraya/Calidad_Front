@@ -11,13 +11,16 @@ export default class PerfilUser extends React.Component {
         this.state={
             nombres:'',
             apellidos:'',
-            email:''
+            email:'',
+            rol:'',
+            genero:'',
+            edad:''
         }
     }
 
     componentDidMount(e){
         var parent=this
-        fetch("https://back-calidad.herokuapp.com/api/alumno/"+localStorage.getItem('mytoken'))
+        fetch("https://api-calida.herokuapp.com/api/alumno/"+localStorage.getItem('mytoken'))
         .then(function (response){ 
             return response.json();
         })
@@ -26,7 +29,10 @@ export default class PerfilUser extends React.Component {
             parent.setState({
                 nombres:data.firstname,
                 apellidos:data.lastname,
-                email:data.email
+                email:data.email,
+                rol:data.usuario,
+                genero:data.genero,
+                edad: data.edad
             })
             
         }).catch(function (err){
@@ -50,6 +56,21 @@ export default class PerfilUser extends React.Component {
                     <tr>
                         <td> <strong> Correo electrónico: </strong></td>
                         <td> <p>  {this.state.email==null?"":this.state.email} </p></td>
+                    </tr>
+
+                    <tr>
+                        <td> <strong> Rol: </strong></td>
+                        <td> <p>  {this.state.rol==null?"":this.state.rol} </p></td>
+                    </tr>
+
+                    <tr>
+                        <td> <strong> Género: </strong></td>
+                        <td> <p>  {this.state.genero==null?"":this.state.genero} </p></td>
+                    </tr>
+
+                    <tr>
+                        <td> <strong> Edad: </strong></td>
+                        <td> <p>  {this.state.edad==null?"":this.state.edad} </p></td>
                     </tr>
 
                 </table>

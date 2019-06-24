@@ -34,7 +34,7 @@ export default class InformacionBasicaUser extends React.Component{
 
         e.preventDefault();
         var that = this
-       fetch('https://back-calidad.herokuapp.com/api/alumno/actualizar/'+localStorage.getItem('id_user'),{
+       fetch('https://api-calida.herokuapp.com/api/alumno/actualizar/'+localStorage.getItem('id_user'),{
             method:'PUT',
             headers:{
                 'Accept': 'application/json, text/plain, */*',
