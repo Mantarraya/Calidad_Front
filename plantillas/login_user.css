@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+    Navbar login
+*/
+
+.login--nav{
+    background-color: #f8f9fa;
+    width: 1;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    height: 35px;
+}
+
+.login--nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+}
+
+.login--nav ul li{
+    list-style: none;
+    padding: 3px 10px;
+}
+
+.login--derecha{
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+.login--iniciar_sesion_email{
+    width: 200px;
+    right: 380px;
+}
+
+.login--iniciar_sesion_pass{
+    width: 200px;
+    right: 130px;
+}
+
+.login--iniciar_sesion_btn{
+    right: 0;
+}
+
+.login--nav ul li input{
+    height: 25px;
+    border-radius: 3px;
+    background-color: white;
+    border: none;
+    border: 0.5px solid gray;
+    padding: 5px;
+}
+
+.login--iniciar_sesion_btn button{
+    height: 37px;
+    width: 80px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 0px;
+    color: green;
+    border: 1px solid green;
+    cursor: pointer;
+}
+
+.login--iniciar_sesion_btn button:hover{
+    background: green;
+    color: white;
+}
+
+/*
+    Cuerpo login
+*/
+
+
+
+
+
+.login--main{
+    padding: 50px 5%;
+    display: flex;
+    background-color: #0056ff;
+}
+
+
+.login--cuadro_informativo{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.login--cuadro_informativo h1{
+    font-size: 60px;
+    color: white;
+}
+
+.login--cuadro_informativo p{
+    font-size: 30px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.login--cuadro_registro{
+    width: 30%;
+    margin: 0 8%;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0px 0px;
+}
+
+
+.login--cuadro_registro input{
+    border-radius: 4px;
+    height: 30px;
+    margin: 10px 0;
+    padding: 5px;
+    outline: none;
+    border: 0.5px solid gray;
+}
+
+
+.login--btn_registrarse{
+    width: 78%;
+    background: white;
+    margin: 10px 0;
+    border-radius: 5px;
+    height: 40px;
+    padding: 5px;
+    outline: none;
+    border: 0.5px solid black;
+    color: black;
+}
+
+
+.login--btn_ingresar_fb{
+    width: 78%;
+    background: white;
+    margin: 10px 0;
+    border-radius: 5px;
+    height: 40px;
+    padding: 5px;
+    outline: none;
+    border: 0.5px solid blue;
+    margin-bottom: 20px;
+    color: blue;
+}

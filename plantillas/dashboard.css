@@ -1,0 +1,170 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.principal--contenedor_home{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.principal--parallax1{
+    background-image: url('https://s2.best-wallpaper.net/wallpaper/1920x1080/1711/City-buildings-night-roof-person_1920x1080.jpg');
+    
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.principal--parallax2{
+    background-image: url('https://img.elcomercio.pe/files/ec_article_multimedia_gallery/uploads/2017/08/29/59a59d8131c69.jpeg');
+    height:500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.principal--contenido_portada{
+    height: 500px;
+    width: 45%;
+    background: rgba(1, 10, 51, 0.411);
+    color: white;
+}
+
+.principal--frase{
+    display: inline;
+    width: 50%;
+    float: right;
+    font-size: 40px;
+}
+.principal--descripcion{
+    width: 50%;
+    display: inline;
+    float: right;
+    font-size: 20px;
+    margin-right: 50px;
+}
+
+
+/*------------------------*/
+
+
+.principal--servicios{
+    position: relative;
+    border: 2px solid green;
+    overflow: auto;
+    background-color: rgba(0, 255, 255, 0.616);
+}
+*{
+    box-sizing: border-box;
+}
+
+.principal--cua1{
+    height: 400px;
+    width: 45%;
+    float: left;
+    padding: 5px;
+    background-color: rgba(127, 255, 212, 0.144);   
+}
+.principal--cua2{
+    height: 400px;
+    width: 25%;
+    float: left;
+    padding: 5px;
+    background: white;   
+}
+.principal--cua3{
+    height: 400px;
+    width: 30%;
+    float: left;
+    padding: 5px;
+    background: white;   
+}
+
+.principal--cua1 p{
+    float: right;
+    margin-right: 10%;
+    color: rgb(6, 6, 82);
+    font-size: 40px;
+}
+
+.principal--cua2 ul,.principal--cua3 ul{
+    padding-top: 30px;
+}
+
+
+/* +++ */
+
+.principal--vision{
+    overflow: hidden;
+    background-color: rgba(33, 33, 68, 1);
+    width: 100%;
+    margin: auto;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 18px;
+    padding: 40px 20%;
+}
+
+.principal--titulo_vision{
+    margin-top: 0px;
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+
+
+/*----------------------------- */
+
+.principal--titulo_creadores{
+    margin: 0px;
+    padding: 40px 0px;
+    color: rgb(6, 6, 78);
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(0, 255, 255, 0.178);
+}
+
+.principal--creadores{
+    height: 250px;
+    background-color: rgba(0, 255, 255, 0.178);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.principal--persona{
+    margin: auto;
+    height: 200px;
+    width: 200px;
+}
+
+.principal--persona1{
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    background-image: url(https://static2.diariosur.es/www/pre2017/multimedia/prensa/noticias/200807/12/fotos/072D6UL-GEN-P1_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.principal--persona2{
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    background-image: url(https://api.women-talk.com/responsive_filemanager/source/NOTICIAS/FOTOS/Chris-Evans3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.principal--persona3{
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    background-image: url(https://i.pinimg.com/originals/5e/75/0d/5e750d2394e1677cd0c5ea2b9e8ca569.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

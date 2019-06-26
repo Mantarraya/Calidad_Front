@@ -1,0 +1,98 @@
+.info_usuario--editar_informacion_basica_user_main{
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 20px; 
+}
+
+.informacion_teacher_container-escoge-cursos
+{
+    display: flex;
+    margin-top: 20px;
+}
+
+.informacion_teacher_escoge-cursos-mate
+{
+    width: 33%;
+    height: 180px;
+    background-color: rgb(254, 119, 130  );
+}
+
+.informacion_teacher_escoge-cursos-ciencias
+{
+    margin-left: 10px;
+    width: 33%;
+    height: 180px;
+    background-color: rgb(95, 253, 80);
+}
+
+.informacion_teacher_escoge-cursos-sociales
+{
+    margin-left: 10px;
+    width: 33%;
+    height: 180px;
+    background-color: rgb(250, 253, 80);
+}
+
+.informacion_teacher_escoge-cursos-letras
+{
+    margin-left: 10px;
+    width: 33%;
+    height: 180px;
+    background-color: rgb(80, 253, 195);
+}
+
+.lbl-name
+{
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.lbl-ciencias,
+.lbl-sociales
+{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.lbl-letras
+{
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.informacion_teacher--escoja-cursos
+{
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.informacion_teacher--titulo-mate,
+.informacion_teacher--titulo-ciencias,
+.informacion_teacher--titulo-sociales,
+.informacion_teacher--titulo-letras
+{
+    text-align: center;
+    background-color: red;
+    color: white;
+}
+
+.informacion_teacher--titulo-ciencias
+{
+    background-color: green;
+}
+
+.informacion_teacher--titulo-sociales
+{
+    background-color: rgb(206, 178, 3);
+}
+
+.informacion_teacher--titulo-letras
+{
+    background-color: rgb(0, 202, 208);
+}
+
+.informacion_teacher--btn-guardar
+{
+    margin-top: 15px;
+}

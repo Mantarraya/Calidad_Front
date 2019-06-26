@@ -1,0 +1,24 @@
+
+.modal_user_cursos--cuadro_lista{
+    padding: 0px 40px;
+}
+
+.modal_user_cursos--cuadro_lista p{
+    font-size: 1.5em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.modal_user_cursos--cuadro_lista_opciones div{
+    color: gray;
+    padding: 10px 0px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.modal_user_cursos--cuadro_lista_opciones div:hover{
+    color:black;
+}
+
+.modal_user_cursos--cuadro_btn_ver_mas{
+    margin-top: 20px;
+}
